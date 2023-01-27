@@ -1,0 +1,27 @@
+.container {
+	padding: var(--gap-s) var(--gap-xl);
+	position: sticky;
+	top: 0;
+}
+
+.logo {
+	color: var(--color-red-brand);
+}
+
+.menu-icon {
+	align-self: center;
+}
+
+@media (max-width: 960px) {
+	.container {
+		padding: var(--gap-xs) var(--gap-l);
+	}
+
+	.menu-icon {
+		margin-right: var(--gap-s-neg);
+	}
+
+	.menu-title {
+		display: none;
+	}
+}

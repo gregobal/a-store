@@ -1,10 +1,9 @@
 import React from 'react';
+import {Page} from "./layouts";
 
 function App() {
   return (
-    <div>
-      A-store
-    </div>
+      <Page />
   );
 }
 
