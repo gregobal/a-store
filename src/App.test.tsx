@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const element = screen.getByText(/A-store/i);
+  const element = screen.getByText(/You need to enable JavaScript to run this app./i);
   expect(element).toBeInTheDocument();
 });
