@@ -13,7 +13,7 @@
 		padding: var(--gap-xs) var(--gap-l);
 	}
 
-	.menu-title {
+	.menuTitle {
 		display: none;
 	}
 }

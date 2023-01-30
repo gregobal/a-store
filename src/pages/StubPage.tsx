@@ -1,11 +1,11 @@
 import {Typography} from "@alfalab/core-components/typography";
 import {useTitle} from "../hooks/useTitle";
 
-type StubPageProps = {
+type Props = {
     pageTitle: string
 }
 
-export const StubPage = ({pageTitle}: StubPageProps) => {
+export const StubPage = ({pageTitle}: Props) => {
     useTitle(`A-Store ${pageTitle}`);
 
     return (

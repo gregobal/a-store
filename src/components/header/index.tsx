@@ -3,7 +3,7 @@ import {Link} from "@alfalab/core-components/link";
 import {Typography} from "@alfalab/core-components/typography";
 import {Link as RouterLink} from "react-router-dom";
 import {ReactComponent as MenuIcon} from "../../assets/menu.svg";
-import styles from './header.module.css';
+import styles from './index.module.css';
 
 export const Header = () => {
     return (
@@ -20,7 +20,6 @@ export const Header = () => {
                 </Typography.Title>
             </Grid.Col>
             <Grid.Col width="auto">
-                {/* Временно до появления компонента меню, ссылка просто роутер проверить */}
                 <Typography.Title tag="div" view="medium">
                     <Link
                         Component={RouterLink}
@@ -29,7 +28,7 @@ export const Header = () => {
                         underline={false}
                         leftAddons={<MenuIcon width={30}/>}
                     >
-                        <span className={styles["menu-title"]}>меню</span>
+                        <span className={styles.menuTitle}>меню</span>
                     </Link>
                 </Typography.Title>
             </Grid.Col>
