@@ -1,5 +1,6 @@
 .container {
-	padding: var(--gap-xs) var(--gap-2xl);
+	padding: var(--gap-xs);
+	padding-left: var(--gap-2xl);
 	background-color: var(--color-white);
 }
 
@@ -8,24 +9,31 @@
 }
 
 .logo:hover {
-	color: var(--color-red-brand-70);
+	color: var(--color-red-brand-85);
 }
 
-.menuLink:hover {
-	color: var(--color-black-60);
+.menuTitle {
+	display: inline-block;
+	line-height: 22px;
+	height: 22px;
 }
 
 .menuIcon {
-	width: 30px;
-	height: 24px;
+	width: 32px;
+	height: 32px;
 }
 
 @media (max-width: 1023px) {
 	.container {
-		padding: var(--gap-xs) var(--gap-l);
+		padding-left: var(--gap-xl);
+		padding-right: var(--gap-3xs);
 	}
 
 	.menuTitle {
 		display: none;
+	}
+
+	.menuIcon {
+		margin-right: var(--gap-xs-neg);
 	}
 }
