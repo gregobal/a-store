@@ -5,9 +5,15 @@ import {Link as RouterLink} from "react-router-dom";
 import {ReactComponent as MenuIcon} from "../../assets/menu.svg";
 import styles from './index.module.css';
 
-export const Header = () => {
+type Props = {
+    className?: string | undefined;
+}
+
+export const Header = ({className}: Props) => {
+    const headerStyles = [styles.container, className].join(" ");
+
     return (
-        <Grid.Row tag="header" gutter={0} align="middle" justify="between" className={styles.container}>
+        <Grid.Row tag="header" gutter={0} align="middle" justify="between" className={headerStyles}>
             <Grid.Col width="auto">
                 <Typography.Title tag="div" view="medium" weight="bold">
                     <Link
@@ -20,13 +26,14 @@ export const Header = () => {
                 </Typography.Title>
             </Grid.Col>
             <Grid.Col width="auto">
-                <Typography.Title tag="div" view="medium">
+                <Typography.Title tag="div" view="medium" weight="bold">
                     <Link
+                        className={styles.menuLink}
                         Component={RouterLink}
                         href={"/contact-us"}
                         view='primary'
                         underline={false}
-                        leftAddons={<MenuIcon width={30}/>}
+                        leftAddons={<MenuIcon className={styles.menuIcon} />}
                     >
                         <span className={styles.menuTitle}>меню</span>
                     </Link>

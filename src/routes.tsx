@@ -1,6 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
-import {RootLayout} from "./layouts";
-import {StubPage} from "./pages";
+import {CART, CONTACT_US, MADE_IN_ALFA, OWN_DESIGN} from "./constants/routes";
+import {RootLayout} from "./layouts/root-layout";
+import {MainPage} from "./pages/main-page";
+import {StubPage} from "./pages/stub-page";
 
 export const router = createBrowserRouter([
     {
@@ -10,22 +12,22 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 index: true,
-                element: <StubPage pageTitle="Главная"/>
+                element: <MainPage/>
             },
             {
-                path: "sdelano-v-alfe",
+                path: MADE_IN_ALFA,
                 element: <StubPage pageTitle="Сделано в Альфе"/>
             },
             {
-                path: "svoy-dizain",
+                path: OWN_DESIGN,
                 element: <StubPage pageTitle="Свой дизайн"/>
             },
             {
-                path: "contact-us",
+                path: CONTACT_US,
                 element: <StubPage pageTitle="Контакты"/>
             },
             {
-                path: "tcart",
+                path: CART,
                 element: <StubPage pageTitle="Корзина"/>
             },
         ]

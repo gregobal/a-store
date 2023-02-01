@@ -1,14 +1,26 @@
 .container {
-	padding: var(--gap-s) var(--gap-xl);
-	position: sticky;
-	top: 0;
+	padding: var(--gap-xs) var(--gap-2xl);
+	background-color: var(--color-white);
 }
 
 .logo {
 	color: var(--color-red-brand);
 }
 
-@media (max-width: 960px) {
+.logo:hover {
+	color: var(--color-red-brand-70);
+}
+
+.menuLink:hover {
+	color: var(--color-black-60);
+}
+
+.menuIcon {
+	width: 30px;
+	height: 24px;
+}
+
+@media (max-width: 1023px) {
 	.container {
 		padding: var(--gap-xs) var(--gap-l);
 	}
