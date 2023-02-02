@@ -1,0 +1,36 @@
+.container :global .active {
+	color: var(--color-white-60);
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
+	min-height: 48px;
+}
+
+@media (min-width: 1024px) {
+	.container {
+		--side-panel-closer-bg-color: var(--color-black);
+		--icon-button-primary-base-color: var(--color-white);
+		--link-primary-color: var(--color-white);
+		--link-primary-hover-color: var(--color-white-30);
+		--link-primary-active-color: var(--color-white-30);
+		--color-light-text-primary: var(--color-white);
+
+		background-color: var(--color-black);
+	}
+
+	.logoContainer {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		padding: var(--gap-s);
+	}
+
+	.container :global .active {
+		color: var(--link-secondary-color);
+	}
+}

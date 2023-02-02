@@ -1,4 +1,29 @@
-export const MADE_IN_ALFA = "sdelano-v-alfe";
-export const OWN_DESIGN = "svoy-dizain";
-export const CONTACT_US = "contact-us";
-export const CART = "tcart";
+type AStoreRoute = {
+    readonly path: string,
+    readonly title: string
+}
+
+export const mainPage: AStoreRoute = {
+    path: "/",
+    title: "Главная"
+};
+
+export const madeInAlfa: AStoreRoute = {
+    path: "sdelano-v-alfe",
+    title: "Сделано в Альфе"
+};
+
+export const ownDesign: AStoreRoute = {
+    path: "svoy-dizain",
+    title: "Свой дизайн"
+};
+
+export const contactUs: AStoreRoute = {
+    path: "contact-us",
+    title: "Контакты"
+};
+
+export const cart: AStoreRoute = {
+    path: "tcart",
+    title: "Корзина"
+};

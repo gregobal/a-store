@@ -6,7 +6,7 @@ type Props = {
 }
 
 export const StubPage = ({pageTitle}: Props) => {
-    useTitle(`A-Store ${pageTitle}`);
+    useTitle(pageTitle);
 
     return (
         <Typography.Title tag="h1">

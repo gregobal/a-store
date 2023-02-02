@@ -1,43 +1,40 @@
+import {Button} from "@alfalab/core-components/button";
 import {Grid} from "@alfalab/core-components/grid";
-import {Link} from "@alfalab/core-components/link";
 import {Typography} from "@alfalab/core-components/typography";
-import {Link as RouterLink} from "react-router-dom";
-import {ReactComponent as MenuIcon} from "../../assets/menu.svg";
+import {Dispatch, SetStateAction} from "react";
+import {ReactComponent as MenuIcon} from "../../assets/icons/menu.svg";
+import {Logo} from "../logo";
+
 import styles from './index.module.css';
 
 type Props = {
-    className?: string | undefined;
+    className?: string | undefined,
+    onSetMenuOpen: Dispatch<SetStateAction<boolean>>
 }
 
-export const Header = ({className}: Props) => {
+export const Header = ({className, onSetMenuOpen}: Props) => {
     const headerStyles = [styles.container, className].join(" ");
+
+    const handleSetMenuOpen = () => {
+        onSetMenuOpen(true);
+    }
 
     return (
         <Grid.Row tag="header" gutter={0} align="middle" justify="between" className={headerStyles}>
             <Grid.Col width="auto">
-                <Typography.Title tag="div" view="medium" weight="bold">
-                    <Link
-                        Component={RouterLink}
-                        href="/"
-                        underline={false}
-                    >
-                        <span className={styles.logo}>A-Store</span>
-                    </Link>
-                </Typography.Title>
+                <Logo/>
             </Grid.Col>
             <Grid.Col width="auto">
-                <Typography.Title tag="div" view="medium" weight="bold">
-                    <Link
-                        className={styles.menuLink}
-                        Component={RouterLink}
-                        href={"/contact-us"}
-                        view='primary'
-                        underline={false}
-                        leftAddons={<MenuIcon className={styles.menuIcon} />}
-                    >
-                        <span className={styles.menuTitle}>меню</span>
-                    </Link>
-                </Typography.Title>
+                <Button
+                    view='link'
+                    size="s"
+                    leftAddons={<MenuIcon className={styles.menuIcon}/>}
+                    onClick={handleSetMenuOpen}
+                >
+                    <Typography.Title tag="div" weight="bold" className={styles.menuTitle}>
+                        меню
+                    </Typography.Title>
+                </Button>
             </Grid.Col>
         </Grid.Row>
     );

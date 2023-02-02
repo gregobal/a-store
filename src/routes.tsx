@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router-dom";
-import {CART, CONTACT_US, MADE_IN_ALFA, OWN_DESIGN} from "./constants/routes";
+import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
 import {MainPage} from "./pages/main-page";
 import {StubPage} from "./pages/stub-page";
@@ -15,20 +15,20 @@ export const router = createBrowserRouter([
                 element: <MainPage/>
             },
             {
-                path: MADE_IN_ALFA,
-                element: <StubPage pageTitle="Сделано в Альфе"/>
+                path: madeInAlfa.path,
+                element: <StubPage pageTitle={madeInAlfa.title}/>
             },
             {
-                path: OWN_DESIGN,
-                element: <StubPage pageTitle="Свой дизайн"/>
+                path: ownDesign.path,
+                element: <StubPage pageTitle={ownDesign.title}/>
             },
             {
-                path: CONTACT_US,
-                element: <StubPage pageTitle="Контакты"/>
+                path: contactUs.path,
+                element: <StubPage pageTitle={contactUs.title}/>,
             },
             {
-                path: CART,
-                element: <StubPage pageTitle="Корзина"/>
+                path: cart.path,
+                element: <StubPage pageTitle={cart.title}/>
             },
         ]
     }
