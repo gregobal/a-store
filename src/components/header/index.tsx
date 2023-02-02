@@ -14,14 +14,18 @@ type Props = {
 }
 
 export const Header = ({className, handleMenuState}: Props) => {
-    const header = classNames(styles.container, className);
-
     const handleSetMenuOpen = () => {
         handleMenuState(true);
     }
 
     return (
-        <Grid.Row tag="header" gutter={0} align="middle" justify="between" className={header}>
+        <Grid.Row
+            tag="header"
+            gutter={0}
+            align="middle"
+            justify="between"
+            className={classNames(styles.container, className)}
+        >
             <Grid.Col width="auto">
                 <Logo/>
             </Grid.Col>

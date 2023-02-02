@@ -23,7 +23,7 @@ export const SideMenu = ({open, onSetOpen}: Props) => {
     const menuRoutes = [madeInAlfa, ownDesign, contactUs];
     const actionIcons = [MailIcon, PhoneIcon, MessageIcon];
 
-    const handleModalOpen = () => {
+    const handleModalClose = () => {
         onSetOpen(false);
     }
 
@@ -31,14 +31,14 @@ export const SideMenu = ({open, onSetOpen}: Props) => {
         <SidePanelResponsive
             className={styles.container}
             open={open}
-            onClose={handleModalOpen}
+            onClose={handleModalClose}
         >
             <SidePanelResponsive.Header/>
             <SidePanelResponsive.Content>
                 <Space size="l" fullWidth>
-                    <Logo className={styles.logoContainer} onClick={handleModalOpen}/>
+                    <Logo className={styles.logoContainer} onClick={handleModalClose}/>
                     {menuRoutes.map((route) => (
-                        <Typography.Title key={route.path} tag="div" weight="bold" onClick={handleModalOpen}>
+                        <Typography.Title key={route.path} tag="div" weight="bold" onClick={handleModalClose}>
                             <Link
                                 Component={RouterLink}
                                 href={route.path}

@@ -12,11 +12,9 @@ type Props = {
 }
 
 export const Promo = ({title, href, position}: Props) => {
-    const container = classNames(styles.container, styles[position]);
-
     return (
         <Link
-            className={container}
+            className={classNames(styles.container, styles[position])}
             Component={RouterLink}
             href={href}
             underline={false}
