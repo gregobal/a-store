@@ -1,0 +1,7 @@
+.text {
+	color: var(--color-red-brand);
+}
+
+.text:hover {
+	color: var(--color-red-brand-85);
+}
