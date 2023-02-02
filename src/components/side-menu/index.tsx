@@ -38,7 +38,7 @@ export const SideMenu = ({open, onSetOpen}: Props) => {
                 <Space size="l" fullWidth>
                     <Logo className={styles.logoContainer} onClick={handleModalOpen}/>
                     {menuRoutes.map((route) => (
-                        <Typography.Title tag="div" weight="bold" onClick={handleModalOpen}>
+                        <Typography.Title key={route.path} tag="div" weight="bold" onClick={handleModalOpen}>
                             <Link
                                 Component={RouterLink}
                                 href={route.path}
@@ -63,8 +63,8 @@ export const SideMenu = ({open, onSetOpen}: Props) => {
                         </PureCell.Main>
                         <PureCell.Footer>
                             <Space size="s" direction="horizontal">
-                                {actionIcons.map((Icon) => (
-                                    <ActionButton icon={<Icon/>} colors="inverted" className={styles.icon}/>
+                                {actionIcons.map((Icon, idx) => (
+                                    <ActionButton key={idx} icon={<Icon/>} colors="inverted" className={styles.icon}/>
                                 ))}
                             </Space>
                         </PureCell.Footer>

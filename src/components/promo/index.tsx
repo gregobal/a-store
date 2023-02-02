@@ -23,9 +23,9 @@ export const Promo = ({title, href, position}: Props) => {
             href={href}
             underline={false}
         >
-            <Typography.Title tag="h1" weight="bold">
+            <Typography.TitleResponsive tag="h1" weight="bold">
                 {title}
-            </Typography.Title>
+            </Typography.TitleResponsive>
         </Link>
     );
 }

@@ -37,3 +37,9 @@
 
 	background-image: url("../../assets/images/Frame_45.jpeg");
 }
+
+@media (max-width: 1023px) {
+	.container {
+		padding: var(--gap-m) var(--gap-xl);
+	}
+}
