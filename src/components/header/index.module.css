@@ -1,16 +1,27 @@
 .container {
-	padding: var(--gap-s) var(--gap-xl);
-	position: sticky;
-	top: 0;
+	--button-link-hover-bg-color: var(--color-light-bg-primary-inverted-alpha-3);
+	--button-link-active-bg-color: var(--color-light-bg-primary-inverted-alpha-7);
+
+	padding: var(--gap-xs);
+	padding-left: var(--gap-2xl);
+	background-color: var(--color-white);
 }
 
-.logo {
-	color: var(--color-red-brand);
+.menuTitle {
+	display: inline-block;
+	line-height: 22px;
+	height: 22px;
 }
 
-@media (max-width: 960px) {
+.menuIcon {
+	width: 32px;
+	height: 32px;
+}
+
+@media (max-width: 1023px) {
 	.container {
-		padding: var(--gap-xs) var(--gap-l);
+		padding-left: var(--gap-xl);
+		padding-right: var(--gap-3xs);
 	}
 
 	.menuTitle {
