@@ -11,7 +11,7 @@ export const RootLayout = () => {
 
     return (
         <div className={styles.container}>
-            <Header className={styles.header} onSetMenuOpen={setMenuOpen} />
+            <Header className={styles.header} handleMenuState={setMenuOpen} />
             <main className={styles.main}>
                 <Outlet />
             </main>

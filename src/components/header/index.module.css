@@ -27,8 +27,4 @@
 	.menuTitle {
 		display: none;
 	}
-
-	.menuIcon {
-		margin-right: var(--gap-xs-neg);
-	}
 }

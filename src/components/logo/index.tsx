@@ -6,8 +6,8 @@ import {Link as RouterLink} from "react-router-dom";
 import styles from './index.module.css';
 
 type Props = {
-    className?: string | undefined,
-    onClick?: MouseEventHandler<HTMLHeadingElement>
+    className?: string,
+    onClick?: MouseEventHandler<HTMLAnchorElement>
 }
 
 export const Logo = ({className, onClick}: Props) => {
@@ -17,13 +17,13 @@ export const Logo = ({className, onClick}: Props) => {
             view="medium"
             weight="bold"
             className={className}
-            onClick={onClick}
         >
             <Link
                 Component={RouterLink}
                 href="/"
                 view='primary'
                 underline={false}
+                onClick={onClick}
             >
                 <span className={styles.text}>A-Store</span>
             </Link>

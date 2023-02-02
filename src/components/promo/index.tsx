@@ -1,5 +1,6 @@
 import {Link} from "@alfalab/core-components/link";
 import {Typography} from "@alfalab/core-components/typography";
+import classNames from "classnames";
 import {Link as RouterLink} from "react-router-dom";
 
 import styles from './index.module.css';
@@ -11,14 +12,11 @@ type Props = {
 }
 
 export const Promo = ({title, href, position}: Props) => {
-    const containerStyles = [
-        styles.container,
-        position === "left" ? styles.left : styles.right
-    ].join(" ");
+    const container = classNames(styles.container, styles[position]);
 
     return (
         <Link
-            className={containerStyles}
+            className={container}
             Component={RouterLink}
             href={href}
             underline={false}
