@@ -1,21 +1,12 @@
 .container {
-	--button-link-hover-bg-color: var(--color-light-bg-primary-inverted-alpha-3);
-	--button-link-active-bg-color: var(--color-light-bg-primary-inverted-alpha-7);
-
 	padding: var(--gap-xs);
 	padding-left: var(--gap-2xl);
 	background-color: var(--color-white);
 }
 
-.menuTitle {
-	display: inline-block;
-	line-height: 22px;
-	height: 22px;
-}
-
 .menuIcon {
-	width: 32px;
-	height: 32px;
+	width: 30px;
+	height: 30px;
 }
 
 @media (max-width: 1023px) {
