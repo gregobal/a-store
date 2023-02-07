@@ -1,6 +1,6 @@
 .container {
 	padding: var(--gap-xs);
-	padding-left: var(--gap-2xl);
+	padding-left: var(--gap-xl);
 	background-color: var(--color-white);
 }
 
@@ -11,7 +11,6 @@
 
 @media (max-width: 1023px) {
 	.container {
-		padding-left: var(--gap-xl);
 		padding-right: var(--gap-3xs);
 	}
 

@@ -1,6 +1,6 @@
 .container {
 	padding-left: var(--gap-l);
-	padding-bottom: var(--gap-m);
+	padding-bottom: var(--gap-2xs);
 	color: var(--color-black-30-flat);
 	background-color: transparent;
 }
@@ -8,7 +8,6 @@
 @media (max-width: 1023px) {
 	.container {
 		padding-left: 0;
-		padding-bottom: var(--gap-xs);
 		text-align: center;
 	}
 }

@@ -30,6 +30,7 @@ export const SideMenu = ({open, onSetOpen}: Props) => {
     return (
         <SidePanelResponsive
             className={styles.container}
+            disableBlockingScroll
             open={open}
             onClose={handleModalClose}
         >

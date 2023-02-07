@@ -1,6 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
+import {MadeInAlfa} from "./pages/made-in-alfa";
 import {MainPage} from "./pages/main-page";
 import {StubPage} from "./pages/stub-page";
 
@@ -10,13 +11,12 @@ export const router = createBrowserRouter([
         element: <RootLayout/>,
         children: [
             {
-                path: "/",
                 index: true,
                 element: <MainPage/>
             },
             {
                 path: madeInAlfa.path,
-                element: <StubPage pageTitle={madeInAlfa.title}/>
+                element: <MadeInAlfa />
             },
             {
                 path: ownDesign.path,
