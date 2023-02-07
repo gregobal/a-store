@@ -20,7 +20,7 @@ export const ShowcaseItem = ({product}: Props) => {
             verticalPadding="airy"
         >
             <PureCell.Graphics verticalAlign="center">
-                <div className={styles.imageContainer}>
+                <div className={styles.wrapper}>
                     <img src={product.preview} alt={product.title} width="368" className={styles.image}/>
                 </div>
             </PureCell.Graphics>
