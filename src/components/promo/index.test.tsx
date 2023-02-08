@@ -18,19 +18,19 @@ describe("Promo", () => {
     it("should contain link with href from props", () => {
         render(element);
 
-        const expected = screen.getByRole("link");
+        const actual = screen.getByRole("link");
 
-        expect(expected).toBeInTheDocument();
-        expect(expected).toHaveAttribute("href", `/${href}`);
+        expect(actual).toBeInTheDocument();
+        expect(actual).toHaveAttribute("href", `/${href}`);
     });
 
     it ("should contain title with tag 'h1'", () => {
         render(element);
 
-        const expected = screen.getByText(title);
+        const actual = screen.getByText(title);
 
-        expect(expected).toBeInTheDocument();
-        expect(expected.tagName).toBe("H1");
+        expect(actual).toBeInTheDocument();
+        expect(actual.tagName).toBe("H1");
     })
 
     it ("should contain className depending on position", () => {

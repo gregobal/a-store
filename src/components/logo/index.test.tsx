@@ -23,9 +23,9 @@ describe("Logo", () => {
     it("should contain link to root", () => {
         render(element);
 
-        const expected = screen.getByRole("link");
+        const actual = screen.getByRole("link");
 
-        expect(expected).toBeInTheDocument();
-        expect(expected).toHaveAttribute("href", '/');
+        expect(actual).toBeInTheDocument();
+        expect(actual).toHaveAttribute("href", '/');
     });
 });

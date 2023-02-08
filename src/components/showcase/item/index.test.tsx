@@ -14,28 +14,28 @@ describe("Showcase Item", () => {
     it("should contain link with product id", () => {
         render(element);
 
-        const expected = screen.getByRole("link");
+        const actual = screen.getByRole("link");
 
-        expect(expected).toBeInTheDocument();
-        expect(expected).toHaveAttribute("href", `/${product.id}`);
+        expect(actual).toBeInTheDocument();
+        expect(actual).toHaveAttribute("href", `/${product.id}`);
     });
 
     it ("should contain products image with alt text", () => {
         render(element);
 
-        const expected = screen.getByRole("img");
+        const actual = screen.getByRole("img");
 
-        expect(expected).toBeInTheDocument();
-        expect(expected).toHaveAttribute("alt", product.title);
+        expect(actual).toBeInTheDocument();
+        expect(actual).toHaveAttribute("alt", product.title);
     })
 
     it ("should contain title with tag 'h2'", () => {
         render(element);
 
-        const expected = screen.getByText(product.title);
+        const actual = screen.getByText(product.title);
 
-        expect(expected).toBeInTheDocument();
-        expect(expected.tagName).toBe("H2");
+        expect(actual).toBeInTheDocument();
+        expect(actual.tagName).toBe("H2");
     })
 
     it ("should contain text with formatted product price", () => {
