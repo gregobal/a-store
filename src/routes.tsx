@@ -3,7 +3,7 @@ import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
 import {MadeInAlfa} from "./pages/made-in-alfa";
 import {MainPage} from "./pages/main-page";
-import {NoMatch} from "./pages/no-match";
+import {NoMatchPage} from "./pages/no-match";
 import {StubPage} from "./pages/stub-page";
 
 export const router = createBrowserRouter([
@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: madeInAlfa.path,
-                element: <MadeInAlfa />
+                element: <MadeInAlfa/>
             },
             {
                 path: ownDesign.path,
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "*",
-                element: <NoMatch />
+                element: <NoMatchPage/>
             }
         ]
     }

@@ -1,13 +1,13 @@
 import {render} from "@testing-library/react";
-import {BrowserRouter} from "react-router-dom";
+import {MemoryRouter} from "react-router-dom";
 import {MadeInAlfa} from "./index";
 
-describe("Main Page", () => {
+describe("Made In Alfa Page", () => {
     it("snapshot", () => {
         const view = render(
-            <BrowserRouter>
+            <MemoryRouter>
                 <MadeInAlfa />
-            </BrowserRouter>
+            </MemoryRouter>
         );
 
         expect(view).toMatchSnapshot();

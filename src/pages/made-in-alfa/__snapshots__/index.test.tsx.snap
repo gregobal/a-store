@@ -1,288 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main Page snapshot 1`] = `
+exports[`Made In Alfa Page snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="generic-wrapper__component_1xe8s generic-wrapper__column_1xe8s generic-wrapper__padding-top-m_1xe8s generic-wrapper__padding-right-xl_1xe8s generic-wrapper__padding-bottom-xl_1xe8s generic-wrapper__padding-left-xl_1xe8s container"
-      >
-        <h1
-          class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy"
-        >
-          Сделано в Альфе
-        </h1>
-        <span
-          class="typography__primary-medium_xcdcz typography__bold_xcdcz"
-        >
-          Хотим каждую из этих вещей! Себе, родным и друзьям
-        </span>
-        <div
-          class="gap__gap_t9kgt gap__vertical_t9kgt"
-          data-gap-size="m"
-        />
-        <article
-          class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
-        >
-          <section
-            class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
-          >
-            <a
-              class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
-              href="/0"
-            >
-              <section
-                class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
-              >
-                <div
-                  class="wrapper"
-                >
-                  <img
-                    alt="Рюкзак «Для умных и свободных»"
-                    class="image"
-                    src="/images/84612265.jpeg"
-                    width="368"
-                  />
-                </div>
-              </section>
-              <section
-                class="pure-cell__component_1ymlk"
-              >
-                <div
-                  class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
-                >
-                  <h2
-                    class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
-                  >
-                    Рюкзак «Для умных и свободных»
-                  </h2>
-                  <span
-                    class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
-                  >
-                    <span
-                      class="amount__component_96zmx amount__bold_96zmx"
-                    >
-                      4 999
-                      <span
-                        class=""
-                      >
-                         ₽
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </section>
-            </a>
-          </section>
-          <section
-            class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
-          >
-            <a
-              class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
-              href="/1"
-            >
-              <section
-                class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
-              >
-                <div
-                  class="wrapper"
-                >
-                  <img
-                    alt="Футболка Для умных и свободных"
-                    class="image"
-                    src="/images/68519498.jpeg"
-                    width="368"
-                  />
-                </div>
-              </section>
-              <section
-                class="pure-cell__component_1ymlk"
-              >
-                <div
-                  class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
-                >
-                  <h2
-                    class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
-                  >
-                    Футболка Для умных и свободных
-                  </h2>
-                  <span
-                    class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
-                  >
-                    <span
-                      class="amount__component_96zmx amount__bold_96zmx"
-                    >
-                      1 999
-                      <span
-                        class=""
-                      >
-                         ₽
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </section>
-            </a>
-          </section>
-          <section
-            class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
-          >
-            <a
-              class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
-              href="/2"
-            >
-              <section
-                class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
-              >
-                <div
-                  class="wrapper"
-                >
-                  <img
-                    alt="Блокнот Для умных и свободных"
-                    class="image"
-                    src="/images/77117755.jpeg"
-                    width="368"
-                  />
-                </div>
-              </section>
-              <section
-                class="pure-cell__component_1ymlk"
-              >
-                <div
-                  class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
-                >
-                  <h2
-                    class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
-                  >
-                    Блокнот Для умных и свободных
-                  </h2>
-                  <span
-                    class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
-                  >
-                    <span
-                      class="amount__component_96zmx amount__bold_96zmx"
-                    >
-                      1 499
-                      <span
-                        class=""
-                      >
-                         ₽
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </section>
-            </a>
-          </section>
-          <section
-            class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
-          >
-            <a
-              class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
-              href="/3"
-            >
-              <section
-                class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
-              >
-                <div
-                  class="wrapper"
-                >
-                  <img
-                    alt="Чехол с кардхолдером"
-                    class="image"
-                    src="/images/15932051.jpeg"
-                    width="368"
-                  />
-                </div>
-              </section>
-              <section
-                class="pure-cell__component_1ymlk"
-              >
-                <div
-                  class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
-                >
-                  <h2
-                    class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
-                  >
-                    Чехол с кардхолдером
-                  </h2>
-                  <span
-                    class="pure-cell__component_jmf8b typography__disabled_1faea typography__component_xcdcz"
-                  >
-                    <span
-                      class="amount__component_96zmx amount__bold_96zmx"
-                    >
-                      799
-                      <span
-                        class=""
-                      >
-                         ₽
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </section>
-            </a>
-          </section>
-          <section
-            class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
-          >
-            <a
-              class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
-              href="/4"
-            >
-              <section
-                class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
-              >
-                <div
-                  class="wrapper"
-                >
-                  <img
-                    alt="Экоручка"
-                    class="image"
-                    src="/images/56369345.jpeg"
-                    width="368"
-                  />
-                </div>
-              </section>
-              <section
-                class="pure-cell__component_1ymlk"
-              >
-                <div
-                  class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
-                >
-                  <h2
-                    class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
-                  >
-                    Экоручка
-                  </h2>
-                  <span
-                    class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
-                  >
-                    <span
-                      class="amount__component_96zmx amount__bold_96zmx"
-                    >
-                      99
-                      <span
-                        class=""
-                      >
-                         ₽
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </section>
-            </a>
-          </section>
-        </article>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="generic-wrapper__component_1xe8s generic-wrapper__column_1xe8s generic-wrapper__padding-top-m_1xe8s generic-wrapper__padding-right-xl_1xe8s generic-wrapper__padding-bottom-xl_1xe8s generic-wrapper__padding-left-xl_1xe8s container"
-    >
       <h1
         class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy"
       >
@@ -552,6 +274,276 @@ Object {
         </section>
       </article>
     </div>
+  </body>,
+  "container": <div>
+    <h1
+      class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy"
+    >
+      Сделано в Альфе
+    </h1>
+    <span
+      class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+    >
+      Хотим каждую из этих вещей! Себе, родным и друзьям
+    </span>
+    <div
+      class="gap__gap_t9kgt gap__vertical_t9kgt"
+      data-gap-size="m"
+    />
+    <article
+      class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+    >
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/0"
+        >
+          <section
+            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          >
+            <div
+              class="wrapper"
+            >
+              <img
+                alt="Рюкзак «Для умных и свободных»"
+                class="image"
+                src="/images/84612265.jpeg"
+                width="368"
+              />
+            </div>
+          </section>
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Рюкзак «Для умных и свободных»
+              </h2>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  4 999
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/1"
+        >
+          <section
+            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          >
+            <div
+              class="wrapper"
+            >
+              <img
+                alt="Футболка Для умных и свободных"
+                class="image"
+                src="/images/68519498.jpeg"
+                width="368"
+              />
+            </div>
+          </section>
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка Для умных и свободных
+              </h2>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 999
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/2"
+        >
+          <section
+            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          >
+            <div
+              class="wrapper"
+            >
+              <img
+                alt="Блокнот Для умных и свободных"
+                class="image"
+                src="/images/77117755.jpeg"
+                width="368"
+              />
+            </div>
+          </section>
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Блокнот Для умных и свободных
+              </h2>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 499
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/3"
+        >
+          <section
+            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          >
+            <div
+              class="wrapper"
+            >
+              <img
+                alt="Чехол с кардхолдером"
+                class="image"
+                src="/images/15932051.jpeg"
+                width="368"
+              />
+            </div>
+          </section>
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Чехол с кардхолдером
+              </h2>
+              <span
+                class="pure-cell__component_jmf8b typography__disabled_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  799
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/4"
+        >
+          <section
+            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          >
+            <div
+              class="wrapper"
+            >
+              <img
+                alt="Экоручка"
+                class="image"
+                src="/images/56369345.jpeg"
+                width="368"
+              />
+            </div>
+          </section>
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Экоручка
+              </h2>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  99
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+    </article>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

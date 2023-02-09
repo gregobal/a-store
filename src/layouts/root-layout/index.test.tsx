@@ -1,12 +1,12 @@
 import {render} from "@testing-library/react";
 import {MemoryRouter} from "react-router-dom";
-import {MainPage} from "./index";
+import {RootLayout} from "./index";
 
-describe("Main Page", () => {
+describe("Root Layout", () => {
     it("snapshot", () => {
         const view = render(
             <MemoryRouter>
-                <MainPage />
+                <RootLayout />
             </MemoryRouter>
         );
 

@@ -3,7 +3,7 @@ import {Typography} from "@alfalab/core-components/typography";
 import {Link as RouterLink} from "react-router-dom";
 import {useTitle} from "../../hooks/useTitle";
 
-export const NoMatch = () => {
+export const NoMatchPage = () => {
     useTitle("404");
 
     return (

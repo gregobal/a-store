@@ -1,5 +1,5 @@
 import {render, screen} from "@testing-library/react";
-import {BrowserRouter} from "react-router-dom";
+import {MemoryRouter} from "react-router-dom";
 import {Showcase} from "./index";
 
 const products = [
@@ -10,9 +10,9 @@ const products = [
 describe("Showcase", () => {
     it("should contain article with products", () => {
         render(
-            <BrowserRouter>
+            <MemoryRouter>
                 <Showcase products={products}/>
-            </BrowserRouter>
+            </MemoryRouter>
         );
 
         expect(screen.getByRole("article")).toBeInTheDocument();

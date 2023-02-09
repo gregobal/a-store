@@ -1,13 +1,13 @@
 import {render, screen} from "@testing-library/react";
-import {BrowserRouter} from "react-router-dom";
+import {MemoryRouter} from "react-router-dom";
 import {ShowcaseItem} from "./index";
 
 const product = {id: 1, preview: "preview", title: "one", price: 1000, availability: true};
 
 const element = (
-    <BrowserRouter>
+    <MemoryRouter>
         <ShowcaseItem product={product}/>
-    </BrowserRouter>
+    </MemoryRouter>
 )
 
 describe("Showcase Item", () => {

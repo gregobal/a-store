@@ -1,14 +1,14 @@
 import {render, screen} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import {BrowserRouter} from "react-router-dom";
+import {MemoryRouter} from "react-router-dom";
 import {Header} from "./index";
 
 const handleMenuState = jest.fn();
 
 const element = (
-    <BrowserRouter>
+    <MemoryRouter>
         <Header handleMenuState={handleMenuState}/>
-    </BrowserRouter>
+    </MemoryRouter>
 )
 
 describe("Header", () => {

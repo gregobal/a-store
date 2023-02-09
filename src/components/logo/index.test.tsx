@@ -1,31 +1,37 @@
 import {render, screen} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import {BrowserRouter} from "react-router-dom";
+import {MemoryRouter, Route, Routes} from "react-router-dom";
 import {Logo} from "./index";
 
 const onClick = jest.fn();
 
+const root = "root";
+const somewhere = "somewhere";
+
 const element = (
-    <BrowserRouter>
-        <Logo onClick={onClick}/>
-    </BrowserRouter>
+    <MemoryRouter initialEntries={[`/${somewhere}`]}>
+        <Routes>
+            <Route path="/" element={<div data-testid={root}/>}/>
+            <Route path={`/${somewhere}`} element={
+                <Logo onClick={onClick}/>
+            }/>
+        </Routes>
+    </MemoryRouter>
 )
 
 describe("Logo", () => {
-    it("onClick called successfully", () => {
-        render(element);
-
-        userEvent.click(screen.getByRole("link"));
-
-        expect(onClick).toBeCalled();
-    });
-
-    it("should contain link to root", () => {
+    it("click should route by link to '/' and call handler one times", () => {
         render(element);
 
         const actual = screen.getByRole("link");
 
         expect(actual).toBeInTheDocument();
         expect(actual).toHaveAttribute("href", '/');
+
+        userEvent.click(actual);
+
+        expect(onClick).toHaveBeenCalledTimes(1);
+        expect(screen.getByTestId(root)).toBeInTheDocument();
+        expect(screen.queryByTestId(somewhere)).not.toBeInTheDocument();
     });
 });
