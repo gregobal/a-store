@@ -3,17 +3,24 @@ import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
 import {MadeInAlfa} from "./pages/made-in-alfa";
 import {MainPage} from "./pages/main-page";
+import {NoMatch} from "./pages/no-match";
 import {StubPage} from "./pages/stub-page";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <RootLayout/>,
+        element: <RootLayout wide={true}/>,
         children: [
             {
                 index: true,
                 element: <MainPage/>
             },
+        ]
+    },
+    {
+        path: "/",
+        element: <RootLayout/>,
+        children: [
             {
                 path: madeInAlfa.path,
                 element: <MadeInAlfa />
@@ -30,6 +37,10 @@ export const router = createBrowserRouter([
                 path: cart.path,
                 element: <StubPage pageTitle={cart.title}/>
             },
+            {
+                path: "*",
+                element: <NoMatch />
+            }
         ]
     }
 ]);

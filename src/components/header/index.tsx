@@ -32,7 +32,7 @@ export const Header = ({className, handleMenuState}: Props) => {
                 <Button
                     view='link'
                     size="s"
-                    rightAddons={<MenuIcon className={styles.menuIcon}/>}
+                    rightAddons={<MenuIcon />}
                     onClick={handleSetMenuOpen}
                 >
                     <span className={styles.menuTitle}>Меню</span>

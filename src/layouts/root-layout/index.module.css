@@ -10,6 +10,7 @@
 	position: sticky;
 	top: 0;
 	width: 100%;
+	z-index: 10;
 }
 
 .main {
@@ -21,4 +22,12 @@
 .footer {
 	bottom:0;
 	width: 100%;
+}
+
+.fixedFooter {
+	position: fixed;
+}
+
+.mainContent {
+	width: 1200px;
 }
