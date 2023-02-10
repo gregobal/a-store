@@ -1,7 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
-import {MadeInAlfa} from "./pages/made-in-alfa";
+import {MadeInAlfaPage} from "./pages/made-in-alfa";
 import {MainPage} from "./pages/main-page";
 import {NoMatchPage} from "./pages/no-match";
 import {StubPage} from "./pages/stub-page";
@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: madeInAlfa.path,
-                element: <MadeInAlfa/>
+                element: <MadeInAlfaPage/>
             },
             {
                 path: ownDesign.path,

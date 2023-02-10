@@ -6,7 +6,7 @@ import {useTitle} from "../../hooks/useTitle";
 
 import products from "./products.json";
 
-export const MadeInAlfa = () => {
+export const MadeInAlfaPage = () => {
     useTitle(madeInAlfa.title);
 
     return (
