@@ -1,14 +1,14 @@
 [
     {
       "id": 0,
-      "preview": "https://static.tildacdn.com/tild6434-6333-4430-b634-666563333637/84612265.jpeg",
+      "preview": "http://qa-games.ru/astore/public/images/98058636.jpeg",
       "title": "Рюкзак «Для умных и свободных»",
       "price": 4999,
       "availability": true
     },
     {
       "id": 1,
-      "preview": "https://static.tildacdn.com/stor3235-6562-4430-a362-643062633265/40113449.jpg",
+      "preview": "http://qa-games.ru/astore/public/images/68519498.jpeg",
       "title": "Футболка Для умных и свободных",
       "price": 1999,
       "availability": true,
@@ -16,21 +16,21 @@
     },
     {
       "id": 2,
-      "preview": "https://static.tildacdn.com/stor6634-3936-4132-a238-306134393530/77117755.jpg",
+      "preview": "http://qa-games.ru/astore/public/images/77117755.jpeg",
       "title": "Блокнот Для умных и свободных",
       "price": 1499,
       "availability": true
     },
     {
       "id": 3,
-      "preview": "https://static.tildacdn.com/stor3861-3430-4564-a334-383737386465/15932051.jpg",
+      "preview": "http://qa-games.ru/astore/public/images/15932051.jpeg",
       "title": "Чехол с кардхолдером",
       "price": 799,
       "availability": false
     },
     {
       "id": 4,
-      "preview": "https://static.tildacdn.com/stor3235-6365-4437-a261-613631646536/56369345.jpg",
+      "preview": "http://qa-games.ru/astore/public/images/56369345.jpeg",
       "title": "Экоручка",
       "price": 99,
       "availability": true
