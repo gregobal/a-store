@@ -10,27 +10,31 @@ type Props = {
 }
 
 export const ShowcaseItem = ({product}: Props) => {
-    const amountColor = product.availability ? "primary" : "disabled";
+    const {id, title, preview, price, availability, subtitle} = product;
+    const amountColor = availability ? "primary" : "disabled";
 
     return (
         <PureCell
-            href={`${product.id}`}
+            href={`${id}`}
             tag={RouterLink}
             direction="vertical"
             verticalPadding="airy"
         >
             <PureCell.Graphics verticalAlign="center">
                 <div className={styles.wrapper}>
-                    <img src={product.preview} alt={product.title} width="368" className={styles.image}/>
+                    <img src={preview} alt={title} width="368" className={styles.image}/>
                 </div>
             </PureCell.Graphics>
             <PureCell.Content>
                 <PureCell.Main>
                     <Typography.TitleResponsive tag="h2" view="xsmall">
-                        {product.title}
+                        {title}
                     </Typography.TitleResponsive>
+                    {subtitle && <Typography.Text view="primary-small" weight="bold" color="secondary">
+                        {subtitle}
+                    </Typography.Text>}
                     <PureCell.Amount
-                        value={product.price}
+                        value={price}
                         currency='RUR'
                         minority={1}
                         color={amountColor}

@@ -3,6 +3,7 @@ import {MemoryRouter} from "react-router-dom";
 import {ShowcaseItem} from "./index";
 
 const product = {id: 1, preview: "preview", title: "one", price: 1000, availability: true};
+const productWithSubtitle = {id: 1, preview: "preview", title: "one", subtitle: "test", price: 1000, availability: false};
 
 const element = (
     <MemoryRouter>
@@ -42,5 +43,16 @@ describe("Showcase Item", () => {
         render(element);
 
         expect(screen.getByText("1 000")).toBeInTheDocument();
+    })
+
+    it ("should contain subtitle text if present in product", () => {
+        render(<MemoryRouter>
+            <ShowcaseItem product={productWithSubtitle}/>
+        </MemoryRouter>);
+
+        const actual = screen.getByText(productWithSubtitle.subtitle);
+
+        expect(actual).toBeInTheDocument();
+        expect(actual.tagName).toBe("SPAN");
     })
 });

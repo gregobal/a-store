@@ -4,6 +4,7 @@ import {RootLayout} from "./layouts/root-layout";
 import {MadeInAlfaPage} from "./pages/made-in-alfa";
 import {MainPage} from "./pages/main-page";
 import {NoMatchPage} from "./pages/no-match";
+import {OwnDesignPage} from "./pages/own-design";
 import {StubPage} from "./pages/stub-page";
 
 export const router = createBrowserRouter([
@@ -27,7 +28,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: ownDesign.path,
-                element: <StubPage pageTitle={ownDesign.title}/>
+                element: <OwnDesignPage/>
             },
             {
                 path: contactUs.path,
