@@ -1,7 +1,7 @@
 .container {
 	--bg-color: var(--color-white);
 
-	padding: var(--gap-xl) var(--gap-2xl);
+	padding: var(--gap-m) var(--gap-xl);
 	display: inline-block;
 	position: relative;
 	width: 100%;
@@ -40,6 +40,6 @@
 
 @media (max-width: 1023px) {
 	.container {
-		padding: var(--gap-m) var(--gap-xl);
+		background-position: 0 25%;
 	}
 }

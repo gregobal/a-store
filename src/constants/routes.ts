@@ -4,7 +4,7 @@ type AStoreRoute = {
 }
 
 export const mainPage: AStoreRoute = {
-    path: "/",
+    path: "",
     title: "Главная"
 };
 

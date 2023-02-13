@@ -1,3 +1,5 @@
+import {GenericWrapper} from "@alfalab/core-components/generic-wrapper";
+import classNames from "classnames";
 import {useState} from "react";
 import {Outlet} from "react-router-dom";
 import {Footer} from "../../components/footer";
@@ -6,17 +8,30 @@ import {SideMenu} from "../../components/side-menu";
 
 import styles from "./index.module.css";
 
-export const RootLayout = () => {
+type Props = {
+    wide?: boolean
+}
+
+export const RootLayout = ({wide = false}: Props) => {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const mainContent = wide ? (<Outlet/>) :
+        (<GenericWrapper
+            column
+            padding={{top: "m", left: "xl", bottom: "xl", right: "xl"}}
+            className={styles.mainContent}
+        >
+            <Outlet/>
+        </GenericWrapper>);
 
     return (
         <div className={styles.container}>
             <Header className={styles.header} handleMenuState={setMenuOpen} />
             <main className={styles.main}>
-                <Outlet />
+                {mainContent}
             </main>
             <SideMenu open={menuOpen} onSetOpen={setMenuOpen} />
-            <Footer className={styles.footer} />
+            <Footer className={classNames(styles.footer, wide && styles.fixedFooter)} />
         </div>
     );
 }
