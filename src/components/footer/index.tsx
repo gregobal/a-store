@@ -1,5 +1,5 @@
 import {Typography} from "@alfalab/core-components/typography";
-import classNames from "classnames";
+import cn from "classnames";
 
 import styles from './index.module.css';
 
@@ -10,7 +10,7 @@ type Props = {
 export const Footer = ({className}: Props) => {
     return (
         <>
-            <footer className={classNames(styles.container, className)}>
+            <footer className={cn(styles.container, className)}>
                 <Typography.Text view="secondary-small">
                     &copy; ООО «Альфа Фьюче Пипл», 2022
                 </Typography.Text>

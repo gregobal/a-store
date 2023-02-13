@@ -1,5 +1,5 @@
 import {GenericWrapper} from "@alfalab/core-components/generic-wrapper";
-import classNames from "classnames";
+import cn from "classnames";
 import {useState} from "react";
 import {Outlet} from "react-router-dom";
 import {Footer} from "../../components/footer";
@@ -30,8 +30,8 @@ export const RootLayout = ({wide = false}: Props) => {
             <main className={styles.main}>
                 {mainContent}
             </main>
-            <SideMenu open={menuOpen} onSetOpen={setMenuOpen} />
-            <Footer className={classNames(styles.footer, wide && styles.fixedFooter)} />
+            <SideMenu open={menuOpen} onSetOpen={setMenuOpen}/>
+            <Footer className={cn(styles.footer, {[styles.fixedFooter]: wide})}/>
         </div>
     );
 }
