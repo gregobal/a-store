@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root Layout snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <header
+          class="grid__row_1gt5e grid__component_xpkmx grid__middle_xpkmx grid__between_xpkmx container header"
+        >
+          <div
+            class="grid__col_1gt5e grid__component_17rb3 grid__width-auto_17rb3"
+          >
+            <div
+              class="typography__component_h1nzy typography__styrene-medium_k22x5 typography__bold_h1nzy"
+            >
+              <a
+                class="link__component_1r33z link__primary_1b8mz link__withoutUnderline_1r33z"
+                href="/"
+              >
+                <span
+                  class="link__text_1r33z"
+                >
+                  <span
+                    class="text"
+                  >
+                    A-Store
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="grid__col_1gt5e grid__component_17rb3 grid__width-auto_17rb3"
+          >
+            <button
+              class="button__component_onnkc button__link_onnkc button__s_onnkc button__component_1qjkj button__link_1qjkj button__withRightAddons_onnkc"
+              type="button"
+            >
+              <span
+                class="button__text_onnkc"
+              >
+                <span
+                  class="menuTitle"
+                >
+                  Меню
+                </span>
+              </span>
+              <span
+                class="button__addons_onnkc"
+              >
+                <svg>
+                  menu.svg
+                </svg>
+              </span>
+            </button>
+          </div>
+        </header>
+        <main
+          class="main"
+        >
+          <div
+            class="generic-wrapper__component_1xe8s generic-wrapper__column_1xe8s generic-wrapper__padding-top-m_1xe8s generic-wrapper__padding-right-xl_1xe8s generic-wrapper__padding-bottom-xl_1xe8s generic-wrapper__padding-left-xl_1xe8s mainContent"
+          />
+        </main>
+        <footer
+          class="container footer"
+        >
+          <span
+            class="typography__secondary-small_xcdcz"
+          >
+            © ООО «Альфа Фьюче Пипл», 2022
+          </span>
+        </footer>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <header
+        class="grid__row_1gt5e grid__component_xpkmx grid__middle_xpkmx grid__between_xpkmx container header"
+      >
+        <div
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-auto_17rb3"
+        >
+          <div
+            class="typography__component_h1nzy typography__styrene-medium_k22x5 typography__bold_h1nzy"
+          >
+            <a
+              class="link__component_1r33z link__primary_1b8mz link__withoutUnderline_1r33z"
+              href="/"
+            >
+              <span
+                class="link__text_1r33z"
+              >
+                <span
+                  class="text"
+                >
+                  A-Store
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-auto_17rb3"
+        >
+          <button
+            class="button__component_onnkc button__link_onnkc button__s_onnkc button__component_1qjkj button__link_1qjkj button__withRightAddons_onnkc"
+            type="button"
+          >
+            <span
+              class="button__text_onnkc"
+            >
+              <span
+                class="menuTitle"
+              >
+                Меню
+              </span>
+            </span>
+            <span
+              class="button__addons_onnkc"
+            >
+              <svg>
+                menu.svg
+              </svg>
+            </span>
+          </button>
+        </div>
+      </header>
+      <main
+        class="main"
+      >
+        <div
+          class="generic-wrapper__component_1xe8s generic-wrapper__column_1xe8s generic-wrapper__padding-top-m_1xe8s generic-wrapper__padding-right-xl_1xe8s generic-wrapper__padding-bottom-xl_1xe8s generic-wrapper__padding-left-xl_1xe8s mainContent"
+        />
+      </main>
+      <footer
+        class="container footer"
+      >
+        <span
+          class="typography__secondary-small_xcdcz"
+        >
+          © ООО «Альфа Фьюче Пипл», 2022
+        </span>
+      </footer>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

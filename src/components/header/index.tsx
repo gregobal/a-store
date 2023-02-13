@@ -1,6 +1,5 @@
 import {Button} from "@alfalab/core-components/button";
 import {Grid} from "@alfalab/core-components/grid";
-import {Typography} from "@alfalab/core-components/typography";
 import classNames from "classnames";
 import {Dispatch, SetStateAction} from "react";
 import {ReactComponent as MenuIcon} from "../../assets/icons/menu.svg";
@@ -33,12 +32,10 @@ export const Header = ({className, handleMenuState}: Props) => {
                 <Button
                     view='link'
                     size="s"
-                    leftAddons={<MenuIcon className={styles.menuIcon}/>}
+                    rightAddons={<MenuIcon />}
                     onClick={handleSetMenuOpen}
                 >
-                    <Typography.Title tag="div" weight="bold" className={styles.menuTitle}>
-                        меню
-                    </Typography.Title>
+                    <span className={styles.menuTitle}>Меню</span>
                 </Button>
             </Grid.Col>
         </Grid.Row>

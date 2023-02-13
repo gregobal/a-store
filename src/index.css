@@ -18,4 +18,5 @@ body {
   font-family: var(--font-family-system);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y:scroll;
 }
