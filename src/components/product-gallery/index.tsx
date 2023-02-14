@@ -27,9 +27,9 @@ export const ProductGallery = ({images, alt}: Props) => {
     return (
         <GenericWrapper column={true} grow={true}>
             <div className={styles.wrapper}>
-                <img src={current} alt={alt} className={styles.image} width="564"/>
+                <img key={current} src={current} alt={alt} className={styles.image} width="564"/>
             </div>
-            <Grid.Row gutter={8} justify="center">
+            <Grid.Row gutter={8} justify="left">
                 {images.map((src) => (
                     <Grid.Col key={src} width="auto">
                         <Button

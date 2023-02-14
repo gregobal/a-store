@@ -1,5 +1,6 @@
 .wrapper {
 	position: relative;
+	background-color: var(--color-light-bg-secondary-tint-15);
 }
 
 .wrapper:after {
@@ -14,10 +15,12 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	animation: fadeIn ease-in-out 0.3s;
 }
 
 .button {
 	margin-top: 8px;
+	transition: opacity 0.15s ease-in-out;
 	border: 2px solid var(--color-light-bg-secondary-tint-15);
 	border-radius: 0;
 	background-repeat: no-repeat;
@@ -25,6 +28,19 @@
 	background-size: cover;
 }
 
+.button:hover {
+	opacity: 0.6;
+}
+
 .active {
 	border-color: var(--color-light-bg-secondary-shade-7);
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
 }
