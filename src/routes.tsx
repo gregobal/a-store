@@ -1,9 +1,13 @@
 import {createBrowserRouter} from "react-router-dom";
 import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
+import {ErrorPage} from "./pages/error";
 import {MadeInAlfaPage} from "./pages/made-in-alfa";
 import {MainPage} from "./pages/main-page";
 import {NoMatchPage} from "./pages/no-match";
+import {OwnDesignPage} from "./pages/own-design";
+import {ProductPage} from "./pages/product";
+import {groupProductLoader, productLoader} from "./pages/product/loader";
 import {StubPage} from "./pages/stub-page";
 
 export const router = createBrowserRouter([
@@ -23,11 +27,31 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: madeInAlfa.path,
-                element: <MadeInAlfaPage/>
+                children: [
+                    {
+                        index: true,
+                        element: <MadeInAlfaPage/>
+                    },
+                    {
+                        path: ":id",
+                        element: <ProductPage/>,
+                        loader: productLoader
+                    }
+                ]
             },
             {
                 path: ownDesign.path,
-                element: <StubPage pageTitle={ownDesign.title}/>
+                children: [
+                    {
+                        index: true,
+                        element: <OwnDesignPage/>
+                    },
+                    {
+                        path: ":id",
+                        element: <ProductPage/>,
+                        loader: groupProductLoader,
+                    }
+                ]
             },
             {
                 path: contactUs.path,
@@ -41,6 +65,7 @@ export const router = createBrowserRouter([
                 path: "*",
                 element: <NoMatchPage/>
             }
-        ]
+        ],
+        errorElement: <ErrorPage/>
     }
 ]);

@@ -1,0 +1,17 @@
+.button {
+	margin-top: 8px;
+	transition: opacity 0.15s ease-in-out;
+	border: 2px solid var(--color-light-bg-secondary-tint-15);
+	border-radius: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.button:hover {
+	opacity: 0.6;
+}
+
+.active {
+	border-color: var(--color-light-bg-secondary-shade-7);
+}

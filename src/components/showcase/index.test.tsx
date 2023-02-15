@@ -18,4 +18,29 @@ describe("Showcase", () => {
         expect(screen.getByRole("article")).toBeInTheDocument();
         expect(screen.getAllByRole("link")).toHaveLength(2);
     });
+
+    it("should contain title if present", () => {
+        render(
+            <MemoryRouter>
+                <Showcase products={products} title={"title"}/>
+            </MemoryRouter>
+        );
+
+        const actual = screen.getByText("title");
+
+        expect(actual).toBeInTheDocument();
+        expect(actual.tagName).toBe("H1");
+    });
+
+    it("should contain description if present", () => {
+        render(
+            <MemoryRouter>
+                <Showcase products={products} description={"description"}/>
+            </MemoryRouter>
+        );
+
+        const actual = screen.getByText("description");
+        expect(actual).toBeInTheDocument();
+        expect(actual.tagName).toBe("SPAN");
+    });
 });

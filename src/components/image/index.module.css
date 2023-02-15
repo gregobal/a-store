@@ -1,0 +1,35 @@
+.wrapper {
+	line-height: 1.2rem;
+	overflow: hidden;
+	width: 100%;
+	min-width: 100%;
+	border-radius: 0;
+	background-color: var(--color-light-bg-secondary-tint-15);
+}
+
+.w1h1 {
+	aspect-ratio: 1;
+}
+
+.w3h4 {
+	aspect-ratio: 3 / 4;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.fadeIn {
+	animation: fadeIn ease-in-out 0.2s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+}

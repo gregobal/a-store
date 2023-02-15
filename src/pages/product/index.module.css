@@ -1,0 +1,6 @@
+@media (max-width: 1023px) {
+	.container {
+		align-self: center;
+		max-width: 600px;
+	}
+}
