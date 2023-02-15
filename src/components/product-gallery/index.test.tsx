@@ -38,12 +38,12 @@ describe("Product Gallery", () => {
     it("button click should set chosen image", () => {
         render(element);
 
-        const image = screen.getByRole("img");
         const buttons = screen.getAllByRole("button");
 
         buttons.forEach((button, idx) => {
             userEvent.click(button);
-            expect(image).toHaveAttribute("src", images[idx]);
+            const actual = screen.getByRole("img");
+            expect(actual).toHaveAttribute("src", images[idx]);
         })
     });
 });
