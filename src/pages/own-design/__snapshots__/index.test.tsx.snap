@@ -1,0 +1,1194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Own Design Page snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1
+        class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy"
+      >
+        Свой дизайн
+      </h1>
+      <span
+        class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      >
+        Выберите вещь, а затем — цвет, размер и стикер.
+      </span>
+      <span
+        class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      >
+        Перенесём стикер на вещь как на фото
+      </span>
+      <div
+        class="gap__gap_t9kgt gap__vertical_t9kgt"
+        data-gap-size="m"
+      />
+      <h1
+        class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy typography__accent_1faea"
+      >
+        Бархатные стикеры
+      </h1>
+      <span
+        class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      >
+        Тактильный антистресс
+      </span>
+      <article
+        class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+      >
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/5"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Худи с бархатными стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/43306375.jpeg"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Худи с бархатными стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Выберите один из восьми стикеров
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    4 199
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/6"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Футболка с бархатными стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/61646585.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Футболка с бархатными стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Все варианты — внутри
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    1 799
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/7"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Футболка оверсайз с бархатными стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/51168667.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Футболка оверсайз с бархатными стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Нажмите, чтобы выбрать стикер
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    1 799
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+      </article>
+      <h1
+        class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy typography__accent_1faea"
+      >
+        FLAT-стикеры
+      </h1>
+      <span
+        class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      >
+        Тема для обсуждения в любой компании
+      </span>
+      <article
+        class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+      >
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/8"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Худи с FLAT-стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/80077475.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Худи с FLAT-стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Выберите один из 20 стикеров
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    4 149
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/9"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Футболка с FLAT-стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/64963633.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Футболка с FLAT-стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Все варианты — внутри
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    1 749
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/10"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Футболка оверсайз с FLAT-стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/48495271.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Футболка оверсайз с FLAT-стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Нажмите, чтобы выбрать стикер
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    1 949
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+      </article>
+      <h1
+        class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy typography__accent_1faea"
+      >
+        3D-стикеры
+      </h1>
+      <span
+        class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      >
+        Дизайн с эффектом объёмного градиента
+      </span>
+      <article
+        class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+      >
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/11"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Худи с 3D-стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/89787126.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Худи с 3D-стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Нажмите, чтобы выбрать стикер
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    4 099
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/12"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Футболка с 3D-стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/85987507.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Футболка с 3D-стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Все варианты — внутри
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    1 699
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+        <section
+          class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+        >
+          <a
+            class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+            href="/13"
+          >
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+            >
+              <img
+                alt="Футболка оверсайз с 3D-стикерами"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/79520262.png"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
+            <section
+              class="pure-cell__component_1ymlk"
+            >
+              <div
+                class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+              >
+                <h2
+                  class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+                >
+                  Футболка оверсайз с 3D-стикерами
+                </h2>
+                <span
+                  class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+                >
+                  Нажмите, чтобы выбрать стикер
+                </span>
+                <span
+                  class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+                >
+                  <span
+                    class="amount__component_96zmx amount__bold_96zmx"
+                  >
+                    1 899
+                    <span
+                      class=""
+                    >
+                       ₽
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </section>
+          </a>
+        </section>
+      </article>
+      <div
+        class="gap__gap_t9kgt gap__vertical_t9kgt"
+        data-gap-size="m"
+      />
+      <span
+        class="typography__tertiary_1faea typography__primary-large_xcdcz typography__bold_xcdcz"
+      >
+        Посмотреть и потрогать все стикеры можно в A-Store на Технопарке. А ещё там можно добавить сразу несколько стикеров на одну вещь.
+      </span>
+    </div>
+  </body>,
+  "container": <div>
+    <h1
+      class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy"
+    >
+      Свой дизайн
+    </h1>
+    <span
+      class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+    >
+      Выберите вещь, а затем — цвет, размер и стикер.
+    </span>
+    <span
+      class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+    >
+      Перенесём стикер на вещь как на фото
+    </span>
+    <div
+      class="gap__gap_t9kgt gap__vertical_t9kgt"
+      data-gap-size="m"
+    />
+    <h1
+      class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy typography__accent_1faea"
+    >
+      Бархатные стикеры
+    </h1>
+    <span
+      class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+    >
+      Тактильный антистресс
+    </span>
+    <article
+      class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+    >
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/5"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Худи с бархатными стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/43306375.jpeg"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Худи с бархатными стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Выберите один из восьми стикеров
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  4 199
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/6"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Футболка с бархатными стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/61646585.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка с бархатными стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Все варианты — внутри
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 799
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/7"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Футболка оверсайз с бархатными стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/51168667.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка оверсайз с бархатными стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Нажмите, чтобы выбрать стикер
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 799
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+    </article>
+    <h1
+      class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy typography__accent_1faea"
+    >
+      FLAT-стикеры
+    </h1>
+    <span
+      class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+    >
+      Тема для обсуждения в любой компании
+    </span>
+    <article
+      class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+    >
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/8"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Худи с FLAT-стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/80077475.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Худи с FLAT-стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Выберите один из 20 стикеров
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  4 149
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/9"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Футболка с FLAT-стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/64963633.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка с FLAT-стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Все варианты — внутри
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 749
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/10"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Футболка оверсайз с FLAT-стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/48495271.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка оверсайз с FLAT-стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Нажмите, чтобы выбрать стикер
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 949
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+    </article>
+    <h1
+      class="typography__component_h1nzy typography__styrene-xlarge_qohs3 typography__bold_h1nzy typography__accent_1faea"
+    >
+      3D-стикеры
+    </h1>
+    <span
+      class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+    >
+      Дизайн с эффектом объёмного градиента
+    </span>
+    <article
+      class="grid__row_1gt5e grid__component_xpkmx grid__left_xpkmx grid__gutter-24_1gt5e"
+    >
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/11"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Худи с 3D-стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/89787126.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Худи с 3D-стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Нажмите, чтобы выбрать стикер
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  4 099
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/12"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Футболка с 3D-стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/85987507.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка с 3D-стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Все варианты — внутри
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 699
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+      <section
+        class="grid__col_1gt5e grid__component_17rb3 grid__width-mobile-12_17rb3 grid__width-tablet-6_17rb3 grid__width-desktop-4_17rb3"
+      >
+        <a
+          class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
+          href="/13"
+        >
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
+          >
+            <img
+              alt="Футболка оверсайз с 3D-стикерами"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/79520262.png"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
+          <section
+            class="pure-cell__component_1ymlk"
+          >
+            <div
+              class="pure-cell__component_1ng4h pure-cell__vertical_1ng4h"
+            >
+              <h2
+                class="typography__component_h1nzy typography__styrene-xsmall_qohs3 typography__medium_h1nzy"
+              >
+                Футболка оверсайз с 3D-стикерами
+              </h2>
+              <span
+                class="typography__secondary_1faea typography__primary-small_xcdcz typography__bold_xcdcz"
+              >
+                Нажмите, чтобы выбрать стикер
+              </span>
+              <span
+                class="pure-cell__component_jmf8b typography__primary_1faea typography__component_xcdcz"
+              >
+                <span
+                  class="amount__component_96zmx amount__bold_96zmx"
+                >
+                  1 899
+                  <span
+                    class=""
+                  >
+                     ₽
+                  </span>
+                </span>
+              </span>
+            </div>
+          </section>
+        </a>
+      </section>
+    </article>
+    <div
+      class="gap__gap_t9kgt gap__vertical_t9kgt"
+      data-gap-size="m"
+    />
+    <span
+      class="typography__tertiary_1faea typography__primary-large_xcdcz typography__bold_xcdcz"
+    >
+      Посмотреть и потрогать все стикеры можно в A-Store на Технопарке. А ещё там можно добавить сразу несколько стикеров на одну вещь.
+    </span>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

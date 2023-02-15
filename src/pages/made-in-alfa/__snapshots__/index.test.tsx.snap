@@ -29,20 +29,20 @@ Object {
             class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
             href="/0"
           >
-            <section
-              class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
             >
-              <div
-                class="wrapper"
-              >
-                <img
-                  alt="Рюкзак «Для умных и свободных»"
-                  class="image"
-                  src="http://qa-games.ru/astore/public/images/98058636.jpeg"
-                  width="368"
-                />
-              </div>
-            </section>
+              <img
+                alt="Рюкзак «Для умных и свободных»"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/98058636.jpeg"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
             <section
               class="pure-cell__component_1ymlk"
             >
@@ -79,20 +79,20 @@ Object {
             class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
             href="/1"
           >
-            <section
-              class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
             >
-              <div
-                class="wrapper"
-              >
-                <img
-                  alt="Футболка Для умных и свободных"
-                  class="image"
-                  src="http://qa-games.ru/astore/public/images/68519498.jpeg"
-                  width="368"
-                />
-              </div>
-            </section>
+              <img
+                alt="Футболка Для умных и свободных"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/68519498.jpeg"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
             <section
               class="pure-cell__component_1ymlk"
             >
@@ -129,20 +129,20 @@ Object {
             class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
             href="/2"
           >
-            <section
-              class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
             >
-              <div
-                class="wrapper"
-              >
-                <img
-                  alt="Блокнот Для умных и свободных"
-                  class="image"
-                  src="http://qa-games.ru/astore/public/images/77117755.jpeg"
-                  width="368"
-                />
-              </div>
-            </section>
+              <img
+                alt="Блокнот Для умных и свободных"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/77117755.jpeg"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
             <section
               class="pure-cell__component_1ymlk"
             >
@@ -179,20 +179,20 @@ Object {
             class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
             href="/3"
           >
-            <section
-              class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
             >
-              <div
-                class="wrapper"
-              >
-                <img
-                  alt="Чехол с кардхолдером"
-                  class="image"
-                  src="http://qa-games.ru/astore/public/images/15932051.jpeg"
-                  width="368"
-                />
-              </div>
-            </section>
+              <img
+                alt="Чехол с кардхолдером"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/15932051.jpeg"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
             <section
               class="pure-cell__component_1ymlk"
             >
@@ -229,20 +229,20 @@ Object {
             class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
             href="/4"
           >
-            <section
-              class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+            <div
+              class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
             >
-              <div
-                class="wrapper"
-              >
-                <img
-                  alt="Экоручка"
-                  class="image"
-                  src="http://qa-games.ru/astore/public/images/56369345.jpeg"
-                  width="368"
-                />
-              </div>
-            </section>
+              <img
+                alt="Экоручка"
+                class="image"
+                src="http://qa-games.ru/astore/public/images/56369345.jpeg"
+                width="368"
+              />
+            </div>
+            <div
+              class="gap__gap_t9kgt gap__vertical_t9kgt"
+              data-gap-size="xs"
+            />
             <section
               class="pure-cell__component_1ymlk"
             >
@@ -300,20 +300,20 @@ Object {
           class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
           href="/0"
         >
-          <section
-            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
           >
-            <div
-              class="wrapper"
-            >
-              <img
-                alt="Рюкзак «Для умных и свободных»"
-                class="image"
-                src="http://qa-games.ru/astore/public/images/98058636.jpeg"
-                width="368"
-              />
-            </div>
-          </section>
+            <img
+              alt="Рюкзак «Для умных и свободных»"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/98058636.jpeg"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
           <section
             class="pure-cell__component_1ymlk"
           >
@@ -350,20 +350,20 @@ Object {
           class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
           href="/1"
         >
-          <section
-            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
           >
-            <div
-              class="wrapper"
-            >
-              <img
-                alt="Футболка Для умных и свободных"
-                class="image"
-                src="http://qa-games.ru/astore/public/images/68519498.jpeg"
-                width="368"
-              />
-            </div>
-          </section>
+            <img
+              alt="Футболка Для умных и свободных"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/68519498.jpeg"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
           <section
             class="pure-cell__component_1ymlk"
           >
@@ -400,20 +400,20 @@ Object {
           class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
           href="/2"
         >
-          <section
-            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
           >
-            <div
-              class="wrapper"
-            >
-              <img
-                alt="Блокнот Для умных и свободных"
-                class="image"
-                src="http://qa-games.ru/astore/public/images/77117755.jpeg"
-                width="368"
-              />
-            </div>
-          </section>
+            <img
+              alt="Блокнот Для умных и свободных"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/77117755.jpeg"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
           <section
             class="pure-cell__component_1ymlk"
           >
@@ -450,20 +450,20 @@ Object {
           class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
           href="/3"
         >
-          <section
-            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
           >
-            <div
-              class="wrapper"
-            >
-              <img
-                alt="Чехол с кардхолдером"
-                class="image"
-                src="http://qa-games.ru/astore/public/images/15932051.jpeg"
-                width="368"
-              />
-            </div>
-          </section>
+            <img
+              alt="Чехол с кардхолдером"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/15932051.jpeg"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
           <section
             class="pure-cell__component_1ymlk"
           >
@@ -500,20 +500,20 @@ Object {
           class="pure-cell__link_167we pure-cell__component_167we pure-cell__vertical_167we pure-cell__airy_167we pure-cell__none_167we"
           href="/4"
         >
-          <section
-            class="pure-cell__component_1pxdl pure-cell__center_1pxdl"
+          <div
+            class="skeleton__component_jp9h2 skeleton__animate_jp9h2 wrapper w1h1"
           >
-            <div
-              class="wrapper"
-            >
-              <img
-                alt="Экоручка"
-                class="image"
-                src="http://qa-games.ru/astore/public/images/56369345.jpeg"
-                width="368"
-              />
-            </div>
-          </section>
+            <img
+              alt="Экоручка"
+              class="image"
+              src="http://qa-games.ru/astore/public/images/56369345.jpeg"
+              width="368"
+            />
+          </div>
+          <div
+            class="gap__gap_t9kgt gap__vertical_t9kgt"
+            data-gap-size="xs"
+          />
           <section
             class="pure-cell__component_1ymlk"
           >
