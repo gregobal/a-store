@@ -8,11 +8,10 @@ type Props = {
     src: string,
     alt: string,
     width: number,
-    ratio?: "w1h1" | "w3h4",
-    isFadeIn?: boolean
+    ratio?: "w1h1" | "w3h4"
 }
 
-export const Image = ({src, alt, width, ratio = "w1h1", isFadeIn}: Props) => {
+export const Image = ({src, alt, width, ratio = "w1h1"}: Props) => {
     const loadingState = useImageLoadingState({src});
 
     return (
@@ -22,8 +21,8 @@ export const Image = ({src, alt, width, ratio = "w1h1", isFadeIn}: Props) => {
             animate={true}
         >
             <img
-                key={isFadeIn ? src : undefined}
-                className={cn(styles.image, {[styles.fadeIn]: isFadeIn})}
+                key={src}
+                className={styles.image}
                 src={src}
                 alt={alt}
                 width={width}
