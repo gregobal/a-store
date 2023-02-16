@@ -2,8 +2,11 @@ import {render, screen} from "@testing-library/react";
 import {MemoryRouter} from "react-router-dom";
 import {ShowcaseItem} from "./index";
 
-const product = {id: 1, preview: "preview", title: "one", price: 1000, availability: true};
-const productWithSubtitle = {id: 1, preview: "preview", title: "one", subtitle: "test", price: 1000, availability: false};
+const product = {id: 1, preview: "preview", title: "one", description: "", price: 1000, availability: true, images: []};
+const productWithSubtitle = {
+    id: 1, preview: "preview", title: "one", description: "", subtitle: "test", price: 1000, availability: false,
+    images: []
+};
 
 const element = (
     <MemoryRouter>

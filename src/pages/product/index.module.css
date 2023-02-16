@@ -3,4 +3,8 @@
 		align-self: center;
 		max-width: 600px;
 	}
+
+	.secondCol {
+		margin-top: var(--gap-xl);
+	}
 }
