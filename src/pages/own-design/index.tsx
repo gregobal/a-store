@@ -1,13 +1,15 @@
 import {Gap} from "@alfalab/core-components/gap";
 import {Typography} from "@alfalab/core-components/typography";
+import {useLoaderData} from "react-router-dom";
 import {Showcase} from "../../components/showcase";
 import {ownDesign} from "../../constants/routes";
 import {useTitle} from "../../hooks/useTitle";
-
-import groups from "./groups.json";
+import {Group} from "../../types/group";
 
 export const OwnDesignPage = () => {
     useTitle(ownDesign.title);
+
+    const groups = useLoaderData() as Group[];
 
     return (
         <>

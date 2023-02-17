@@ -1,7 +1,7 @@
 import {GenericWrapper} from "@alfalab/core-components/generic-wrapper";
 import cn from "classnames";
 import {useState} from "react";
-import {Outlet} from "react-router-dom";
+import {Outlet, useNavigation} from "react-router-dom";
 import {Footer} from "../../components/footer";
 import {Header} from "../../components/header";
 import {SideMenu} from "../../components/side-menu";
@@ -15,6 +15,8 @@ type Props = {
 export const RootLayout = ({wide = false}: Props) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const navigation = useNavigation();
+
     const mainContent = wide ? (<Outlet/>) :
         (<GenericWrapper
             column
@@ -26,8 +28,8 @@ export const RootLayout = ({wide = false}: Props) => {
 
     return (
         <div className={styles.container}>
-            <Header className={styles.header} handleMenuState={setMenuOpen} />
-            <main className={styles.main}>
+            <Header className={styles.header} handleMenuState={setMenuOpen}/>
+            <main className={cn(styles.main, {[styles.loading]: navigation.state === "loading"})}>
                 {mainContent}
             </main>
             <SideMenu open={menuOpen} onSetOpen={setMenuOpen}/>

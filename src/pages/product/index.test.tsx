@@ -1,29 +1,29 @@
 import {render, screen, waitFor} from "@testing-library/react";
 import {createMemoryRouter, RouterProvider} from "react-router-dom";
-import {madeInAlfa} from "../../constants/routes";
 import {Product} from "../../types/product";
 
-import products from "./_fixtures/products.json";
-import {MadeInAlfaPage} from "./index";
+import products from "../made-in-alfa/_fixtures/products.json";
+import {ProductPage} from "./index";
 
-const loaderStub = () => new Promise<Product[]>((resolve) => resolve(products));
+const product = products[0];
+const loaderStub = () => new Promise<Product>((resolve) => resolve(product));
 
-describe("Made In Alfa Page", () => {
+describe("Product Page", () => {
     it("snapshot", async () => {
         const view = render(
             <RouterProvider router={
                 createMemoryRouter([{
-                    path: madeInAlfa.path,
-                    element: <MadeInAlfaPage/>,
+                    path: "/:id",
+                    element: <ProductPage/>,
                     loader: () => loaderStub()
                 }], {
-                    initialEntries: [`/${madeInAlfa.path}`]
+                    initialEntries: [`/0`]
                 })}
             />
         );
 
         await waitFor(() => {
-            expect(screen.getByText(madeInAlfa.title)).toBeInTheDocument();
+            expect(screen.getByText(product.title)).toBeInTheDocument();
         });
 
         expect(view).toMatchSnapshot();

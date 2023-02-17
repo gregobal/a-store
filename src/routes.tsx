@@ -1,4 +1,6 @@
+import {LoaderFunctionArgs} from "@remix-run/router/utils";
 import {createBrowserRouter} from "react-router-dom";
+import {getMadeInAlfa, getProduct, getYourDesign} from "./api";
 import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
 import {ErrorPage} from "./pages/error";
@@ -7,8 +9,13 @@ import {MainPage} from "./pages/main-page";
 import {NoMatchPage} from "./pages/no-match";
 import {OwnDesignPage} from "./pages/own-design";
 import {ProductPage} from "./pages/product";
-import {groupProductLoader, productLoader} from "./pages/product/loader";
 import {StubPage} from "./pages/stub-page";
+
+const productRoute = {
+    path: ":id",
+    element: <ProductPage/>,
+    loader: ({params}: LoaderFunctionArgs) => getProduct(params.id)
+}
 
 export const router = createBrowserRouter([
     {
@@ -30,13 +37,10 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <MadeInAlfaPage/>
+                        element: <MadeInAlfaPage/>,
+                        loader: () => getMadeInAlfa()
                     },
-                    {
-                        path: ":id",
-                        element: <ProductPage/>,
-                        loader: productLoader
-                    }
+                    productRoute
                 ]
             },
             {
@@ -44,13 +48,10 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <OwnDesignPage/>
+                        element: <OwnDesignPage/>,
+                        loader: () => getYourDesign()
                     },
-                    {
-                        path: ":id",
-                        element: <ProductPage/>,
-                        loader: groupProductLoader,
-                    }
+                    productRoute
                 ]
             },
             {
