@@ -1,8 +1,9 @@
 import {Amount} from "@alfalab/core-components/amount";
 import {Grid} from "@alfalab/core-components/grid";
+import {Link} from "@alfalab/core-components/link";
 import {Space} from "@alfalab/core-components/space";
 import {Typography} from "@alfalab/core-components/typography";
-import {useLoaderData} from "react-router-dom";
+import {useLoaderData, useNavigate} from "react-router-dom";
 import {ProductDescription} from "../../components/product/description";
 import {ProductForm} from "../../components/product/form";
 import {ProductGallery} from "../../components/product/gallery";
@@ -16,6 +17,8 @@ const colWidth = {mobile: 12, tablet: 12, desktop: 6};
 export const ProductPage = () => {
     const product = useLoaderData() as Product;
     const {title, price, images, description} = product;
+
+    const navigate = useNavigate();
 
     useTitle(title);
 
@@ -39,6 +42,11 @@ export const ProductPage = () => {
                     </Typography.TitleResponsive>
                     <ProductForm product={product}/>
                     <ProductDescription description={description}/>
+                    <Typography.Text view="primary-small">
+                        <Link view="secondary" pseudo={true} onClick={() => navigate(-1)}>
+                            Вернуться назад
+                        </Link>
+                    </Typography.Text>
                 </Space>
             </Grid.Col>
         </Grid.Row>

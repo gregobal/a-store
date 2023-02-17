@@ -1,12 +1,12 @@
 import {Grid} from "@alfalab/core-components/grid";
 import {Typography} from "@alfalab/core-components/typography";
-import {Product} from "../../types/product";
+import {Group} from "../../types/group";
 import {ShowcaseItem} from "./item";
 
 type Props = {
-    title?: string,
-    description?: string
-    products: Product[]
+    title?: Group["title"],
+    description?: Group["description"]
+    products: Group["products"]
 }
 
 export const Showcase = ({title, description, products}: Props) => {
