@@ -1,6 +1,5 @@
-import {LoaderFunctionArgs} from "@remix-run/router/utils";
 import {createBrowserRouter} from "react-router-dom";
-import {getMadeInAlfa, getProduct, getYourDesign} from "./api";
+import {getMadeInAlfa, getYourDesign} from "./api";
 import {cart, contactUs, madeInAlfa, ownDesign} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
 import {ErrorPage} from "./pages/error";
@@ -9,12 +8,13 @@ import {MainPage} from "./pages/main-page";
 import {NoMatchPage} from "./pages/no-match";
 import {OwnDesignPage} from "./pages/own-design";
 import {ProductPage} from "./pages/product";
+import {productLoader} from "./pages/product/loader";
 import {StubPage} from "./pages/stub-page";
 
 const productRoute = {
     path: ":id",
     element: <ProductPage/>,
-    loader: ({params}: LoaderFunctionArgs) => getProduct(params.id)
+    loader: productLoader
 }
 
 export const router = createBrowserRouter([

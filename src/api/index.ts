@@ -14,7 +14,7 @@ export const getYourDesign = (): Promise<Group[]> =>
         `${BASE_URL}/your-design`
     ).then((res) => res.data);
 
-export const getProduct = (id: string | undefined): Promise<Product> =>
+export const getProduct = (id: string): Promise<Product> =>
     axios.get<Product>(
         `${BASE_URL}/product/${id}`
     ).then((res) => res.data);
