@@ -1,45 +1,80 @@
 import {Button} from "@alfalab/core-components/button";
 import {Grid} from "@alfalab/core-components/grid";
+import {BaseSelectChangePayload} from "@alfalab/core-components/select";
+import {SelectResponsive} from "@alfalab/core-components/select/Component.responsive";
+import {OptionShape} from "@alfalab/core-components/select/typings";
 import {Space} from "@alfalab/core-components/space";
 import {useMemo, useState} from "react";
 import {Product} from "../../../types/product";
-import {ProductFormSelect} from "./select";
 
 type Props = {
     product: Product
 }
 
-export const ProductForm = ({product}: Props) => {
-    const {colors, sizes, models, stickerNumbers} = product;
+const optionKeys = ["colors", "sizes", "models", "stickerNumbers"] as const;
+type OptionKey = typeof optionKeys[number];
 
-    const stickers = useMemo(
-        () => stickerNumbers?.map(n => n.toString(10)),
-        [stickerNumbers]
+type Options = Record<OptionKey, OptionShape[]>;
+
+type Selected = Record<OptionKey, OptionShape>;
+
+const labels: Record<OptionKey, string> = {
+    colors: "Цвет",
+    sizes: "Размер",
+    models: "Модель",
+    stickerNumbers: "Номер стикера"
+}
+
+export const ProductForm = ({product}: Props) => {
+    const selectsOpts = useMemo(() => {
+        return optionKeys.reduce((acc, key) => {
+            const arr = product[key];
+            if (arr && arr.length > 0) {
+                return {
+                    ...acc,
+                    [key]: arr.map((v) => ({key: v, content: v}))
+                };
+            }
+            return acc;
+        }, {} as Options)
+    }, [product]);
+
+    const [selected, setSelected] = useState<Selected>(
+        Object.entries(selectsOpts).reduce((acc, [key, value]) => ({
+            ...acc,
+            [key]: value[0]
+        }), {} as Selected)
     );
 
-    const [color, setColor] = useState(colors && colors[0]);
-    const [size, setSize] = useState(sizes && sizes[0]);
-    const [model, setModel] = useState(models && models[0]);
-    const [sticker, setSticker] =
-        useState(stickers && stickers[0]);
+    const handleChange = (key: OptionKey, {selected}: BaseSelectChangePayload) => {
+        if (selected) {
+            setSelected(prev => ({
+                ...prev,
+                [key]: selected
+            }))
+        }
+    }
 
     const handleClick = () => {
-        console.log(color, size, model, sticker);
     }
 
     return (
         <Grid.Row tag="section" gutter={0} justify="left">
             <Grid.Col tag="div" width={{mobile: 7, tablet: 5, desktop: 5}}>
                 <Space size="m" fullWidth={true}>
-                    {colors &&
-                        <ProductFormSelect label="Цвет" values={colors} selected={color} onSetValue={setColor}/>}
-                    {sizes &&
-                        <ProductFormSelect label="Размер" values={sizes} selected={size} onSetValue={setSize}/>}
-                    {models &&
-                        <ProductFormSelect label="Модель" values={models} selected={model} onSetValue={setModel}/>}
-                    {stickers &&
-                        <ProductFormSelect label="Номер стикера" values={stickers}
-                                           selected={sticker} onSetValue={setSticker}/>}
+                    {Object.entries(selectsOpts).map(([key, value]) => {
+                        const optKey = key as OptionKey;
+                        return (<SelectResponsive
+                            key={key}
+                            size="s"
+                            block={true}
+                            closeOnSelect={true}
+                            label={labels[optKey]}
+                            options={value}
+                            selected={selected[optKey]}
+                            onChange={(payload) => handleChange(optKey, payload)}
+                        />);
+                    })}
                     <Button view="primary" block={true} onClick={() => handleClick()}>
                         В корзину
                     </Button>
