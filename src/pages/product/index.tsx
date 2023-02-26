@@ -42,7 +42,7 @@ export const ProductPage = () => {
                             bold="full"
                         />
                     </Typography.TitleResponsive>
-                    <ProductForm product={product}/>
+                    <ProductForm key={product.id} product={product}/>
                     <ProductDescription description={description}/>
                     <Typography.Text view="primary-small">
                         <Link view="secondary" pseudo={true} onClick={handleNavigateBack}>

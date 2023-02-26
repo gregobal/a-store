@@ -5,78 +5,86 @@ import {SelectResponsive} from "@alfalab/core-components/select/Component.respon
 import {OptionShape} from "@alfalab/core-components/select/typings";
 import {Space} from "@alfalab/core-components/space";
 import {useMemo, useState} from "react";
+import {positionOptionsLabels} from "../../../constants/cart";
+import {useAppDispatch} from "../../../hooks/useAppDispatch";
+import {cartActions} from "../../../store/cart-slice";
+import {CartItemOptionKey, cartItemOptionKeys, CartItemOptions} from "../../../types/cart";
 import {Product} from "../../../types/product";
 
 type Props = {
     product: Product
 }
 
-const optionKeys = ["colors", "sizes", "models", "stickerNumbers"] as const;
-type OptionKey = typeof optionKeys[number];
-
-type Options = Record<OptionKey, OptionShape[]>;
-
-type Selected = Record<OptionKey, OptionShape>;
-
-const labels: Record<OptionKey, string> = {
-    colors: "Цвет",
-    sizes: "Размер",
-    models: "Модель",
-    stickerNumbers: "Номер стикера"
-}
+type SelectOptions = Record<CartItemOptionKey, OptionShape[]>;
 
 export const ProductForm = ({product}: Props) => {
-    const selectsOpts = useMemo(() => {
-        return optionKeys.reduce((acc, key) => {
-            const arr = product[key];
-            if (arr && arr.length > 0) {
+    const dispatch = useAppDispatch();
+
+    const selectOptions = useMemo(() => {
+        return cartItemOptionKeys.reduce((acc, cartOptionKey) => {
+            const options = product[`${cartOptionKey}s`];
+            if (options && options.length > 0) {
                 return {
                     ...acc,
-                    [key]: arr.map((v) => ({key: v, content: v}))
+                    [cartOptionKey]: options.map((v) => {
+                        if (typeof v === "number") {
+                            v = v.toString(10);
+                        }
+                        return ({key: v, content: v})
+                    })
                 };
             }
             return acc;
-        }, {} as Options)
+        }, {} as SelectOptions)
     }, [product]);
 
-    const [selected, setSelected] = useState<Selected>(
-        Object.entries(selectsOpts).reduce((acc, [key, value]) => ({
+    const [selected, setSelected] = useState<CartItemOptions>(
+        Object.entries(selectOptions).reduce((acc, [optionKey, value]) => ({
             ...acc,
-            [key]: value[0]
-        }), {} as Selected)
+            [optionKey]: value[0].key
+        }), {} as CartItemOptions)
     );
 
-    const handleChange = (key: OptionKey, {selected}: BaseSelectChangePayload) => {
+    const handleChange = (optionKey: CartItemOptionKey, {selected}: BaseSelectChangePayload) => {
         if (selected) {
             setSelected(prev => ({
                 ...prev,
-                [key]: selected
+                [optionKey]: selected.key
             }))
         }
     }
 
     const handleClick = () => {
+        dispatch(cartActions.add({
+            product,
+            options: selected
+        }));
     }
 
     return (
         <Grid.Row tag="section" gutter={0} justify="left">
             <Grid.Col tag="div" width={{mobile: 7, tablet: 5, desktop: 5}}>
                 <Space size="m" fullWidth={true}>
-                    {Object.entries(selectsOpts).map(([key, value]) => {
-                        const optKey = key as OptionKey;
+                    {Object.entries(selectOptions).map(([key, value]) => {
+                        const optionKey = key as CartItemOptionKey;
                         return (<SelectResponsive
                             key={key}
                             size="s"
                             block={true}
                             closeOnSelect={true}
-                            label={labels[optKey]}
+                            label={positionOptionsLabels[optionKey]}
                             options={value}
-                            selected={selected[optKey]}
-                            onChange={(payload) => handleChange(optKey, payload)}
+                            selected={selected[optionKey]}
+                            onChange={(payload) => handleChange(optionKey, payload)}
                         />);
                     })}
-                    <Button view="primary" block={true} onClick={() => handleClick()}>
-                        В корзину
+                    <Button
+                        view="primary"
+                        block={true}
+                        disabled={!product.availability}
+                        onClick={() => handleClick()}
+                    >
+                        {product.availability ? "В корзину" : "Нет в наличии"}
                     </Button>
                 </Space>
             </Grid.Col>

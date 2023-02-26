@@ -18,6 +18,11 @@ export const ownDesign: AStoreRoute = {
     title: "Свой дизайн"
 };
 
+export const product: AStoreRoute = {
+    path: "product",
+    title: "Товар"
+};
+
 export const contactUs: AStoreRoute = {
     path: "contact-us",
     title: "Контакты"

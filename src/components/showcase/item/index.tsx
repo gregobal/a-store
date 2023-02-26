@@ -2,6 +2,7 @@ import {Gap} from "@alfalab/core-components/gap";
 import {PureCell} from "@alfalab/core-components/pure-cell";
 import {Typography} from "@alfalab/core-components/typography";
 import {Link as RouterLink} from "react-router-dom";
+import {product as productRoute} from "../../../constants/routes";
 import {Product} from "../../../types/product";
 import {Image} from "../../image";
 
@@ -15,7 +16,7 @@ export const ShowcaseItem = ({product}: Props) => {
 
     return (
         <PureCell
-            href={`${id}`}
+            href={`/${productRoute.path}/${id}`}
             tag={RouterLink}
             direction="vertical"
             verticalPadding="airy"

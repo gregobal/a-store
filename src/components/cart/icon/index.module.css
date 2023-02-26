@@ -1,0 +1,41 @@
+.container {
+	position: fixed;
+	top: calc(var(--gap-xl) + 64px);
+	right: var(--gap-xl);
+	padding: 0;
+	cursor: pointer;
+	transition: transform 0.15s ease-in-out;
+	animation: fadeIn ease-in-out 0.3s;
+	border: none;
+	background-color: transparent;
+}
+
+.container:hover {
+	transform: scale3d(1.1, 1.1, 1);
+}
+
+.shadowNone {
+	--tooltip-hint-box-shadow: none;
+}
+
+@media (max-width: 1023px) {
+	.container {
+		top: unset;
+		bottom: var(--gap-xl);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+	50% {
+		opacity: 0.9;
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+}
