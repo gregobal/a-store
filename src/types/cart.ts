@@ -4,7 +4,7 @@ export const cartItemOptionKeys = ["color", "size", "model", "stickerNumber"] as
 
 export type CartItemOptionKey = typeof cartItemOptionKeys[number];
 
-export type CartItemOptions = Record<CartItemOptionKey, string>;
+export type CartItemOptions = Partial<Record<CartItemOptionKey, string>>;
 
 export type CartItemId = string;
 
