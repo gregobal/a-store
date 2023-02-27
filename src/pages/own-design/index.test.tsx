@@ -3,7 +3,7 @@ import {createMemoryRouter, RouterProvider} from "react-router-dom";
 import {ownDesign} from "../../constants/routes";
 import {Group} from "../../types/group";
 
-import groups from "./_fixtures/groups.json";
+import groups from "../../utils/fixtures/groups.json";
 
 import {OwnDesignPage} from "./index";
 

@@ -3,7 +3,7 @@ import {createMemoryRouter, RouterProvider} from "react-router-dom";
 import {madeInAlfa} from "../../constants/routes";
 import {Product} from "../../types/product";
 
-import products from "./_fixtures/products.json";
+import products from "../../utils/fixtures/products.json";
 import {MadeInAlfaPage} from "./index";
 
 const loaderStub = () => new Promise<Product[]>((resolve) => resolve(products));
