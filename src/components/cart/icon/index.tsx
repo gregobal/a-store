@@ -27,8 +27,6 @@ export const CartIcon = ({handleCartSidePanelState}: Props) => {
         handleCartSidePanelState(true);
     }
 
-    const badge = (total > 0 && <Badge view='count' height={24} content={total}/>)
-
     const tooltip = (<Typography.Text view="primary-large" weight="medium">
         =&nbsp;
         <Amount value={totalPrice} minority={1} currency="RUB" bold="full"/>
@@ -47,7 +45,9 @@ export const CartIcon = ({handleCartSidePanelState}: Props) => {
                 <Circle
                     size={80}
                     backgroundColor={colorRedBrand}
-                    bottomAddons={badge}
+                    bottomAddons={
+                        <Badge view="count" height={24} content={total}/>
+                    }
                 >
                     <ShoppingBagIcon color={colorWhite}/>
                 </Circle>

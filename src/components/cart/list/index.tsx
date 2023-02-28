@@ -8,8 +8,8 @@ export const CartList = () => {
 
     return (
         <Space size="l" direction="vertical" fullWidth={true}>
-            {cart.map((item, idx) => (
-                <CartListItem key={idx} item={item}/>
+            {cart.map((item) => (
+                <CartListItem key={item.id} item={item}/>
             ))}
         </Space>
     );
