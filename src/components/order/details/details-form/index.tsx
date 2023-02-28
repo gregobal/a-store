@@ -9,15 +9,17 @@ import {Textarea} from "@alfalab/core-components/textarea";
 import {Typography} from "@alfalab/core-components/typography";
 import {Dispatch, Fragment, SetStateAction, useState} from "react";
 import {useForm} from "react-hook-form";
-import {deliveryOpts} from "../../../constants/order";
-import {Delivery} from "../../../types/order";
+import {withoutDelivery} from "../../../../constants/order";
+import {useAppDispatch} from "../../../../hooks/useAppDispatch";
+import {placeAnOrder} from "../../../../store/order-slice";
+import {DeliveryType, deliveryTypes, OrderContact} from "../../../../types/order";
 
 type Props = {
-    delivery: Delivery,
-    onSetDelivery: Dispatch<SetStateAction<Delivery>>
+    deliveryType: DeliveryType,
+    onSetDeliveryType: Dispatch<SetStateAction<DeliveryType>>
 }
 
-const requiredInputErrorMessage = "Пожалуйста, заполните все обязательные поля";
+const requiredInputErrorMessage = "Пожалуйста, заполните обязательное поле";
 
 const inputs = [
     {
@@ -26,7 +28,7 @@ const inputs = [
         required: requiredInputErrorMessage,
         pattern: {
             value: /^[а-яё\w-]+ [а-яё\w-]+ ?[а-яё\w]+$/i,
-            message: "Введите ФИО полностью"
+            message: "Укажите, пожалуйста, имя полностью"
         },
         title: "ФИО"
     },
@@ -36,17 +38,18 @@ const inputs = [
         required: requiredInputErrorMessage,
         pattern: {
             value: /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/,
-            message: "Введите корректный адрес электронной почты"
+            message: "Укажите, пожалуйста, корректный email"
         },
         title: "E-mail"
     },
     {
-        name: "tel",
+        name: "phone",
+        type: "tel",
         placeholder: "+79990009900",
         required: requiredInputErrorMessage,
         pattern: {
             value: /^((\+7|7|8)+([0-9]){10})$/,
-            message: "Введите корректный номер телефона"
+            message: "Укажите, пожалуйста, корректный номер телефона"
         },
         title: "Телефон"
     },
@@ -56,13 +59,14 @@ const inputs = [
         required: requiredInputErrorMessage,
         minLength: {
             value: 10,
-            message: "Введите корректный адрес для доставки"
+            message: "Укажите, пожалуйста, корректный адрес для доставки"
         },
         title: "Адрес (если вы выбрали самовывоз — оставьте поле пустым)"
     }
 ]
 
-export const OrderDetailsForm = ({delivery, onSetDelivery}: Props) => {
+export const OrderDetailsForm = ({deliveryType, onSetDeliveryType}: Props) => {
+    const dispatch = useAppDispatch();
     const [agreement, setAgreement] = useState(false);
 
     const {register, formState: {errors}, handleSubmit} = useForm();
@@ -74,20 +78,24 @@ export const OrderDetailsForm = ({delivery, onSetDelivery}: Props) => {
     }
 
     const handleChangeDelivery = (_: unknown, payload?: { value: string; name?: string; }) => {
-        const newValue = deliveryOpts.find(({value}) => value === payload?.value)
-        if (newValue) {
-            onSetDelivery(newValue);
+        if (payload) {
+            onSetDeliveryType(payload.value as DeliveryType);
         }
     }
 
-    const onSubmit = (data: any) => {
-        console.log(JSON.stringify(data));
+    const onSubmit = (data: unknown) => {
+        const contact = data as OrderContact;
+        dispatch(placeAnOrder({
+            ...contact,
+            deliveryType,
+            paymentType: "Банковская карта"
+        }));
     }
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <Space size="s" direction="vertical" fullWidth={true}>
-                {inputs.map(({title, name, placeholder, required, pattern, minLength}) => (
+                {inputs.map(({title, name, type, placeholder, required, pattern, minLength}) => (
                     <Fragment key={name}>
                         <Typography.Text view="primary-medium" weight="medium">
                             {title}
@@ -95,12 +103,13 @@ export const OrderDetailsForm = ({delivery, onSetDelivery}: Props) => {
                         <Gap size="s"/>
                         <Input
                             size="m" block={true}
-                            autoComplete={name}
+                            autoComplete={type ?? name}
                             placeholder={placeholder}
                             {...register(name, {
-                                required: name === "address" ?
-                                    {value: delivery.value !== "none", message: required} :
-                                    required,
+                                required: name === "address" ? {
+                                    value: deliveryType !== withoutDelivery,
+                                    message: required
+                                } : required,
                                 pattern,
                                 minLength
                             })}
@@ -117,11 +126,11 @@ export const OrderDetailsForm = ({delivery, onSetDelivery}: Props) => {
                     Доставка
                 </Typography.Text>
                 <RadioGroup
-                    value={delivery.value}
+                    value={deliveryType}
                     onChange={handleChangeDelivery}
                 >
-                    {deliveryOpts.map(({label, value}) => (
-                        <Radio key={value} size="m" block={true} label={label} value={value}/>
+                    {deliveryTypes.map((value) => (
+                        <Radio key={value} size="m" block={true} label={value} value={value}/>
                     ))}
                 </RadioGroup>
                 <Gap size="s"/>

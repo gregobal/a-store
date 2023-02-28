@@ -1,7 +1,9 @@
-import {Delivery} from "../types/order";
+import {DeliveryType} from "../types/order";
 
-export const deliveryOpts: Delivery[] = [
-    {label: "Доставка по России — 350₽", value: "company", price: 350},
-    {label: "Курьером по Москве — 300₽", value: "courier", price: 300},
-    {label: "Самовывоз (пр-т Андропова, 18 корп. 3)", value: "none", price: 0}
-]
+export const deliveryCost: Record<DeliveryType, number> = {
+    "Доставка по России — 350₽": 350,
+    "Курьером по Москве — 300₽": 300,
+    "Самовывоз (пр-т Андропова, 18 корп. 3)": 0
+}
+
+export const withoutDelivery: DeliveryType = "Самовывоз (пр-т Андропова, 18 корп. 3)";

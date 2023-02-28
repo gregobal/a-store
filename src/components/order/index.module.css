@@ -1,3 +1,5 @@
-.column {
-	padding-top: var(--gap-l);
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: var(--gap-l);
 }

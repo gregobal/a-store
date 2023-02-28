@@ -6,6 +6,10 @@ import {RootState} from "../index";
 
 const initialState: Cart = [];
 
+const init: CaseReducer<Cart> = () => {
+    return [];
+}
+
 const add: CaseReducer<Cart, PayloadAction<{ product: Product, options: CartItemOptions }>> =
     (state, {payload: {product, options}}) => {
         const id = `${product.id}${Object.values(options).join("")}`;
@@ -74,6 +78,7 @@ export const {
     name: "cart",
     initialState,
     reducers: {
+        init,
         add,
         remove,
         increment,
