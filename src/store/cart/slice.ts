@@ -71,7 +71,8 @@ const changeQuantity: CaseReducer<Cart, PayloadAction<{ id: CartItemId, quantity
 
 export const {
     actions: cartActions,
-    reducer: cartReducer
+    reducer: cartReducer,
+    name: cartSliceName
 } = createSlice({
     name: "cart",
     initialState,
