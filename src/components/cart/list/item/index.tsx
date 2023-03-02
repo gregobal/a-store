@@ -1,3 +1,4 @@
+import {GenericWrapper} from "@alfalab/core-components/generic-wrapper";
 import {IconButton} from "@alfalab/core-components/icon-button";
 import {SuperEllipse} from "@alfalab/core-components/icon-view/components";
 import {Input} from "@alfalab/core-components/input";
@@ -13,7 +14,7 @@ import {ReactComponent as PlusIcon} from "../../../../assets/icons/plus.svg";
 import {MAX_CART_ITEM_QUANTITY, positionOptionsLabels} from "../../../../constants/cart";
 import {product as productRoute} from "../../../../constants/routes";
 import {useAppDispatch} from "../../../../hooks/useAppDispatch";
-import {cartActions} from "../../../../store/cart-slice";
+import {cartActions} from "../../../../store/cart";
 import {CartItem, CartItemOptionKey} from "../../../../types/cart";
 
 import styles from './index.module.css';
@@ -49,13 +50,13 @@ export const CartListItem = ({item: {id, quantity, productId, title, preview, pr
 
     return (
         <PureCell direction="horizontal" className={styles.container}>
-            <PureCell.Graphics verticalAlign='center'>
+            <PureCell.Graphics verticalAlign="center">
                 <SuperEllipse imageUrl={preview} size={64}/>
             </PureCell.Graphics>
             <PureCell.Content>
                 <PureCell.Main>
                     <Space size={4} direction="vertical" align="center" fullWidth={true}>
-                        <Typography.Text view="primary-large" weight="medium">
+                        <Typography.Title tag="h2" view="xsmall">
                             <Link
                                 href={`/${productRoute.path}/${productId}`}
                                 Component={RouterLink}
@@ -63,58 +64,63 @@ export const CartListItem = ({item: {id, quantity, productId, title, preview, pr
                             >
                                 {title}
                             </Link>
-                        </Typography.Text>
+                        </Typography.Title>
                         {Object.entries(options).map(([key, value]) => (
-                            <Typography.Text key={key} view="secondary-medium">
+                            <Typography.Text key={key} view="secondary-small">
                                 {positionOptionsLabels[key as CartItemOptionKey]}: {value}
                             </Typography.Text>
                         ))}
                     </Space>
                 </PureCell.Main>
-            </PureCell.Content>
-            <PureCell.Content>
-                <PureCell.Main>
-                    <Space size={2} direction="horizontal" align="center" className={styles.space}>
-                        <IconButton
-                            size="xs"
-                            view="tertiary"
-                            icon={MinusIcon}
-                            disabled={quantity <= 1}
-                            onClick={handleDecrementClick}
-                        />
-                        <Input
-                            inputClassName={styles.input}
-                            type="number"
-                            min={0}
-                            max={MAX_CART_ITEM_QUANTITY}
-                            value={quantity.toString(10)}
-                            onChange={handleInputChange}
-                        />
-                        <IconButton
-                            size="xs"
-                            view="tertiary"
-                            icon={PlusIcon}
-                            disabled={quantity >= MAX_CART_ITEM_QUANTITY}
-                            onClick={handleIncrementClick}
-                        />
+                <PureCell.Addon verticalAlign="top">
+                    <IconButton
+                        size="xs"
+                        view="primary"
+                        icon={CrossIcon}
+                        onClick={handleRemoveClick}
+                    />
+                </PureCell.Addon>
+                <PureCell.Footer>
+                    <GenericWrapper
+                        grow={true}
+                        justifyContent="between"
+                        alignItems="center"
+                        padding={{right: "s"}}
+                    >
+                        <GenericWrapper alignItems="center">
+                            <IconButton
+                                size="xs"
+                                view="primary"
+                                icon={MinusIcon}
+                                disabled={quantity <= 1}
+                                onClick={handleDecrementClick}
+                            />
+                            <Input
+                                className={styles.quantity}
+                                inputClassName={styles.input}
+                                type="number"
+                                min={0}
+                                max={MAX_CART_ITEM_QUANTITY}
+                                value={quantity.toString(10)}
+                                onChange={handleInputChange}
+                            />
+                            <IconButton
+                                size="xs"
+                                view="primary"
+                                icon={PlusIcon}
+                                disabled={quantity >= MAX_CART_ITEM_QUANTITY}
+                                onClick={handleIncrementClick}
+                            />
+                        </GenericWrapper>
                         <PureCell.Amount
-                            className={styles.total}
                             value={totalPrice}
                             currency='RUR'
                             minority={1}
-                            textView="primary-small"
+                            textView="component"
                             weight="bold"
-                            rightAddons={
-                                <IconButton
-                                    size="xs"
-                                    view="tertiary"
-                                    icon={CrossIcon}
-                                    onClick={handleRemoveClick}
-                                />
-                            }
                         />
-                    </Space>
-                </PureCell.Main>
+                    </GenericWrapper>
+                </PureCell.Footer>
             </PureCell.Content>
         </PureCell>
     );

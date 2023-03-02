@@ -7,7 +7,7 @@ import {colorRedBrand, colorWhite} from '@alfalab/core-components/vars';
 import {Dispatch, SetStateAction} from "react";
 import {ReactComponent as ShoppingBagIcon} from "../../../assets/icons/shopping-bag.svg";
 import {useAppSelector} from "../../../hooks/useAppSelector";
-import {selectCartTotalCount, selectCartTotalPrice} from "../../../store/cart-slice";
+import {selectCartTotalCount, selectCartTotalPrice} from "../../../store/cart";
 
 import styles from './index.module.css';
 
@@ -27,10 +27,12 @@ export const CartIcon = ({handleCartSidePanelState}: Props) => {
         handleCartSidePanelState(true);
     }
 
-    const tooltip = (<Typography.Text view="primary-large" weight="medium">
-        =&nbsp;
-        <Amount value={totalPrice} minority={1} currency="RUB" bold="full"/>
-    </Typography.Text>);
+    const tooltip = (
+        <Typography.Text view="primary-large" weight="medium">
+            =&nbsp;
+            <Amount value={totalPrice} minority={1} currency="RUB" bold="full"/>
+        </Typography.Text>
+    );
 
     return (
         <button onClick={handleSetCartSidePanelOpen} className={styles.container}>

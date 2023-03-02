@@ -7,7 +7,7 @@ import {Space} from "@alfalab/core-components/space";
 import {useMemo, useState} from "react";
 import {positionOptionsLabels} from "../../../constants/cart";
 import {useAppDispatch} from "../../../hooks/useAppDispatch";
-import {cartActions} from "../../../store/cart-slice";
+import {cartActions} from "../../../store/cart";
 import {CartItemOptionKey, cartItemOptionKeys, CartItemOptions} from "../../../types/cart";
 import {Product} from "../../../types/product";
 

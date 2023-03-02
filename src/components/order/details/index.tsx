@@ -7,7 +7,7 @@ import {Typography} from "@alfalab/core-components/typography";
 import {useState} from "react";
 import {deliveryCost, withoutDelivery} from "../../../constants/order";
 import {useAppSelector} from "../../../hooks/useAppSelector";
-import {selectCartTotalPrice} from "../../../store/cart-slice";
+import {selectCartTotalPrice} from "../../../store/cart";
 import {CartList} from "../../cart/list";
 import {OrderDetailsForm} from "./details-form";
 
@@ -25,7 +25,7 @@ export const OrderDetails = () => {
                 <OrderDetailsForm deliveryType={delivery} onSetDeliveryType={setDelivery}/>
             </Grid.Col>
             <Grid.Col width={colWidth} order={{tablet: "first", mobile: "first"}}>
-                <Space size="l" direction="vertical" fullWidth={true}>
+                <Space size="s" direction="vertical" fullWidth={true}>
                     <Typography.Text view="primary-medium" weight="medium">
                         Выбрано
                     </Typography.Text>

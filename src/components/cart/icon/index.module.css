@@ -1,6 +1,6 @@
 .container {
 	position: fixed;
-	top: calc(var(--gap-xl) + 64px);
+	top: 88px;
 	right: var(--gap-xl);
 	padding: 0;
 	cursor: pointer;

@@ -3,10 +3,10 @@ import {Button} from "@alfalab/core-components/button";
 import {Plate} from "@alfalab/core-components/plate";
 import {ReactComponent as AlertIcon} from "../../../assets/icons/alert.svg";
 import {useAppDispatch} from "../../../hooks/useAppDispatch";
-import {orderActions} from "../../../store/order-slice";
+import {orderActions} from "../../../store/order";
 
 type Props = {
-    error: String
+    error: string
 }
 
 export const OrderError = ({error}: Props) => {

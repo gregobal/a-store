@@ -6,8 +6,8 @@ import {useLocation, useNavigate} from "react-router-dom";
 import {ReactComponent as CrossIcon} from "../../assets/icons/back.svg";
 import {ORDER_HASH} from "../../constants/routes";
 import {useAppSelector} from "../../hooks/useAppSelector";
-import {selectCartTotalCount} from "../../store/cart-slice";
-import {selectOrder} from "../../store/order-slice";
+import {selectCartTotalCount} from "../../store/cart";
+import {selectOrder} from "../../store/order";
 import {OrderDetails} from "./details";
 import {OrderError} from "./error";
 
@@ -22,8 +22,9 @@ export const Order = () => {
     const order = useAppSelector(selectOrder);
     const cartTotal = useAppSelector(selectCartTotalCount);
 
-    const isNotModalView = order.status === "idle" && cartTotal === 0;
-    const isCanBackFromModal = order.status === "idle";
+    const isIdleStatus = order.status === "idle";
+    const isNotModalView = isIdleStatus && cartTotal === 0;
+    const isCanBackFromModal = isIdleStatus;
 
     const goBack = useCallback(() => {
         if (isCanBackFromModal) {
@@ -61,7 +62,7 @@ export const Order = () => {
             />
             <Divider/>
             <ModalMobile.Content className={styles.container}>
-                {order.status === "idle" && <OrderDetails/>}
+                {isIdleStatus && <OrderDetails/>}
                 {order.status === "loading" && <OrderLoading/>}
                 {order.status === "failed" && <OrderError error={order.error as string}/>}
                 {order.status === "succeeded" && <OrderSuccess result={order.result as string}/>}

@@ -4,11 +4,11 @@ import {Plate} from "@alfalab/core-components/plate";
 import {useEffect} from "react";
 import {ReactComponent as CheckmarkIcon} from "../../../assets/icons/checkmark.svg";
 import {useAppDispatch} from "../../../hooks/useAppDispatch";
-import {cartActions} from "../../../store/cart-slice";
-import {orderActions} from "../../../store/order-slice";
+import {cartActions} from "../../../store/cart";
+import {orderActions} from "../../../store/order";
 
 type Props = {
-    result: String
+    result: string
 }
 
 export const OrderSuccess = ({result}: Props) => {

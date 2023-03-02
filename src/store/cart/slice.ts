@@ -2,7 +2,6 @@ import {CaseReducer, createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {MAX_CART_ITEM_QUANTITY} from "../../constants/cart";
 import {Cart, CartItemId, CartItemOptions} from "../../types/cart";
 import {Product} from "../../types/product";
-import {RootState} from "../index";
 
 const initialState: Cart = [];
 
@@ -60,16 +59,15 @@ const decrement: CaseReducer<Cart, PayloadAction<CartItemId>> = (state, {payload
     }
 }
 
-const changeQuantity: CaseReducer<Cart, PayloadAction<{ id: CartItemId, quantity: number }>> =
-    (state, {payload: {id, quantity}}) => {
-        const cartItem = state.find((item) => item.id === id);
+const changeQuantity: CaseReducer<Cart, PayloadAction<{ id: CartItemId, quantity: number }>> = (
+    state, {payload: {id, quantity}}
+) => {
+    const cartItem = state.find((item) => item.id === id);
 
-        if (cartItem) {
-            if (quantity > 0 && quantity <= MAX_CART_ITEM_QUANTITY) {
-                cartItem.quantity = quantity;
-            }
-        }
+    if (cartItem && quantity > 0 && quantity <= MAX_CART_ITEM_QUANTITY) {
+        cartItem.quantity = quantity;
     }
+}
 
 export const {
     actions: cartActions,
@@ -85,13 +83,4 @@ export const {
         decrement,
         changeQuantity
     }
-})
-
-export const selectCart = (state: RootState) => state.cart;
-
-export const selectCartTotalCount = (state: RootState) =>
-    state.cart.reduce((acc, {quantity}) => acc + quantity, 0);
-
-export const selectCartTotalPrice = (state: RootState) =>
-    state.cart.reduce((acc, {price, quantity}) =>
-        acc + price * quantity, 0);
+});

@@ -2,13 +2,14 @@ import {Amount} from "@alfalab/core-components/amount";
 import {Button} from "@alfalab/core-components/button";
 import {Divider} from "@alfalab/core-components/divider";
 import {SidePanelResponsive} from "@alfalab/core-components/side-panel";
+import {SidePanelMobile} from "@alfalab/core-components/side-panel/Component.mobile";
 import {Space} from "@alfalab/core-components/space";
 import {Typography} from "@alfalab/core-components/typography";
 import {Dispatch, SetStateAction, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import {ORDER_HASH} from "../../../constants/routes";
 import {useAppSelector} from "../../../hooks/useAppSelector";
-import {selectCartTotalPrice} from "../../../store/cart-slice";
+import {selectCartTotalCount, selectCartTotalPrice} from "../../../store/cart";
 import {CartList} from "../list";
 
 import styles from './index.module.css';
@@ -21,24 +22,25 @@ type Props = {
 export const CartSidePanel = ({open, onSetOpen}: Props) => {
     const navigate = useNavigate();
     const totalPrice = useAppSelector(selectCartTotalPrice);
+    const totalCount = useAppSelector(selectCartTotalCount);
+
     const handleModalClose = () => {
         onSetOpen(false);
     }
 
-    const handleClick = () => {
+    const handleOpenOrderClick = () => {
         onSetOpen(false);
         navigate(ORDER_HASH);
     }
 
     useEffect(() => {
-        if (totalPrice === 0) {
+        if (totalCount === 0) {
             onSetOpen(false);
         }
-    }, [totalPrice, onSetOpen])
+    }, [totalCount, onSetOpen])
 
     return (
         <SidePanelResponsive
-            className={styles.container}
             disableBlockingScroll={true}
             disableRestoreFocus={true}
             open={open}
@@ -52,7 +54,7 @@ export const CartSidePanel = ({open, onSetOpen}: Props) => {
                 <CartList/>
             </SidePanelResponsive.Content>
             <Divider/>
-            <SidePanelResponsive.Footer layout="column">
+            <SidePanelMobile.Footer layout="column">
                 <Space align="end">
                     <Typography.Text view="primary-large" weight="bold">
                         Сумма:&nbsp;
@@ -62,12 +64,11 @@ export const CartSidePanel = ({open, onSetOpen}: Props) => {
                 <Button
                     view="primary"
                     block={true}
-                    disabled={totalPrice === 0}
-                    onClick={handleClick}
+                    onClick={handleOpenOrderClick}
                 >
                     Дальше
                 </Button>
-            </SidePanelResponsive.Footer>
+            </SidePanelMobile.Footer>
         </SidePanelResponsive>
     );
 }

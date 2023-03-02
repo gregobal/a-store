@@ -11,7 +11,7 @@ import {Dispatch, Fragment, SetStateAction, useState} from "react";
 import {useForm} from "react-hook-form";
 import {withoutDelivery} from "../../../../constants/order";
 import {useAppDispatch} from "../../../../hooks/useAppDispatch";
-import {placeAnOrder} from "../../../../store/order-slice";
+import {placeAnOrder} from "../../../../store/order";
 import {DeliveryType, deliveryTypes, OrderContact} from "../../../../types/order";
 
 type Props = {
