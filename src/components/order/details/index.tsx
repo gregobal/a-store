@@ -11,6 +11,8 @@ import {selectCartTotalPrice} from "../../../store/cart";
 import {CartList} from "../../cart/list";
 import {OrderDetailsForm} from "./details-form";
 
+import styles from './index.module.css';
+
 const colWidth = {mobile: 12, tablet: {s: 10, m: 8}, desktop: 6};
 
 export const OrderDetails = () => {
@@ -20,7 +22,7 @@ export const OrderDetails = () => {
     const totalPrice = cartPrice + deliveryCost[delivery];
 
     return (
-        <Grid.Row gutter={24} justify="center">
+        <Grid.Row gutter={24} justify="center" className={styles.container}>
             <Grid.Col width={colWidth}>
                 <OrderDetailsForm deliveryType={delivery} onSetDeliveryType={setDelivery}/>
             </Grid.Col>
@@ -29,7 +31,9 @@ export const OrderDetails = () => {
                     <Typography.Text view="primary-medium" weight="medium">
                         Выбрано
                     </Typography.Text>
-                    <CartList/>
+                    <div className={styles.cartContainer}>
+                        <CartList/>
+                    </div>
                     <GenericWrapper column={true} alignItems="end" grow={true}>
                         <Typography.Text view="primary-medium" weight="medium">
                             на сумму:&nbsp;
@@ -45,6 +49,7 @@ export const OrderDetails = () => {
                             Итоговая сумма:&nbsp;
                             <Amount value={totalPrice} minority={1} currency="RUB" bold="full"/>
                         </Typography.Text>
+                        <Gap size="l"/>
                     </GenericWrapper>
                 </Space>
             </Grid.Col>

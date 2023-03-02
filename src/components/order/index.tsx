@@ -12,6 +12,7 @@ import {OrderDetails} from "./details";
 import {OrderError} from "./error";
 
 import styles from './index.module.css';
+
 import {OrderLoading} from "./loading";
 import {OrderSuccess} from "./success";
 

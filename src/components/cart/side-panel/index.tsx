@@ -41,14 +41,13 @@ export const CartSidePanel = ({open, onSetOpen}: Props) => {
 
     return (
         <SidePanelResponsive
-            disableBlockingScroll={true}
             disableRestoreFocus={true}
             open={open}
             onClose={handleModalClose}
         >
-            <SidePanelResponsive.Header>
+            <SidePanelMobile.Header>
                 Ваш заказ
-            </SidePanelResponsive.Header>
+            </SidePanelMobile.Header>
             <Divider/>
             <SidePanelResponsive.Content className={styles.content}>
                 <CartList/>
