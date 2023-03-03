@@ -1,0 +1,9 @@
+.cartContainer {
+	height: 720px;
+}
+
+@media (max-width: 1023px) {
+	.cartContainer {
+		height: 100%;
+	}
+}

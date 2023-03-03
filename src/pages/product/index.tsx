@@ -22,6 +22,8 @@ export const ProductPage = () => {
 
     useTitle(title);
 
+    const handleNavigateBack = () => navigate(-1);
+
     return (
         <Grid.Row tag="article" gutter={24} justify="center" className={styles.container}>
             <Grid.Col tag="section" width={colWidth}>
@@ -40,10 +42,10 @@ export const ProductPage = () => {
                             bold="full"
                         />
                     </Typography.TitleResponsive>
-                    <ProductForm product={product}/>
+                    <ProductForm key={product.id} product={product}/>
                     <ProductDescription description={description}/>
                     <Typography.Text view="primary-small">
-                        <Link view="secondary" pseudo={true} onClick={() => navigate(-1)}>
+                        <Link view="secondary" pseudo={true} onClick={handleNavigateBack}>
                             Вернуться назад
                         </Link>
                     </Typography.Text>

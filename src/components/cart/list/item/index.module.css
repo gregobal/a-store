@@ -1,0 +1,17 @@
+.input {
+	font-size: 14px;
+	font-weight: bold;
+	width: 32px;
+	padding: 4px;
+	text-align: center;
+}
+
+.quantity {
+	--form-control-s-min-height: 32px;
+}
+
+.container {
+	padding: var(--gap-xs);
+	border-radius: var(--plate-border-radius);
+	background-color: var(--color-light-specialbg-secondary-transparent);
+}

@@ -21,7 +21,7 @@ describe("Showcase Item", () => {
         const actual = screen.getByRole("link");
 
         expect(actual).toBeInTheDocument();
-        expect(actual).toHaveAttribute("href", `/${product.id}`);
+        expect(actual).toHaveAttribute("href", `/product/${product.id}`);
     });
 
     it ("should contain products image with alt text", () => {
