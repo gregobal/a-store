@@ -1,6 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import {getMadeInAlfa, getYourDesign} from "./api";
-import {cart, contactUs, madeInAlfa, ownDesign, product} from "./constants/routes";
+import {contactUs, madeInAlfa, ownDesign, product} from "./constants/routes";
 import {RootLayout} from "./layouts/root-layout";
 import {ErrorPage} from "./pages/error";
 import {MadeInAlfaPage} from "./pages/made-in-alfa";
@@ -45,10 +45,6 @@ export const router = createBrowserRouter([
                     {
                         path: contactUs.path,
                         element: <StubPage pageTitle={contactUs.title}/>,
-                    },
-                    {
-                        path: cart.path,
-                        element: <StubPage pageTitle={cart.title}/>
                     },
                     {
                         path: "*",

@@ -28,9 +28,4 @@ export const contactUs: AStoreRoute = {
     title: "Контакты"
 };
 
-export const cart: AStoreRoute = {
-    path: "tcart",
-    title: "Корзина"
-};
-
 export const ORDER_HASH = "#tcart";
