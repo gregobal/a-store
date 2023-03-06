@@ -3,7 +3,7 @@ import {Link} from "@alfalab/core-components/link";
 import {Typography} from "@alfalab/core-components/typography";
 import {Link as RouterLink} from "react-router-dom";
 import {YMap} from "../../components/ymap";
-import {contactUs} from "../../constants/routes";
+import {contactUs, policy} from "../../constants/routes";
 import {useTitle} from "../../hooks/useTitle";
 
 const A_STORE_EMAIL = "info@alfabankstore.ru";
@@ -65,10 +65,10 @@ export const ContactPage = () => {
             <Gap size="xl"/>
             <Typography.Text view="primary-small" weight="bold">
                 <Link
-                    href="#"
+                    href={`/${policy.path}`}
                     Component={RouterLink}
                 >
-                    Политика конфиденциальностии обработки персональных данных
+                    Политика конфиденциальности и обработки персональных данных
                 </Link>
             </Typography.Text>
         </>

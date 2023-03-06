@@ -1,0 +1,1 @@
+export const SIDE_MODAL_BREAKPOINT = 599;
