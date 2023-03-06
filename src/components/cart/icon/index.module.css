@@ -1,7 +1,7 @@
 .container {
 	position: fixed;
-	top: 88px;
-	right: var(--gap-xl);
+	top: var(--gap-7xl);
+	right: var(--gap-2xl);
 	padding: 0;
 	cursor: pointer;
 	transition: transform 0.15s ease-in-out;
