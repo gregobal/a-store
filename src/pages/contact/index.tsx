@@ -3,11 +3,9 @@ import {Link} from "@alfalab/core-components/link";
 import {Typography} from "@alfalab/core-components/typography";
 import {Link as RouterLink} from "react-router-dom";
 import {YMap} from "../../components/ymap";
+import {contacts} from "../../constants/contact";
 import {contactUs, policy} from "../../constants/routes";
 import {useTitle} from "../../hooks/useTitle";
-
-const A_STORE_EMAIL = "info@alfabankstore.ru";
-const A_STORE_PHONE = "+7 906 061 60 20";
 
 export const ContactPage = () => {
     useTitle(contactUs.title);
@@ -18,22 +16,13 @@ export const ContactPage = () => {
                 {contactUs.title}
             </Typography.TitleResponsive>
             <Gap size="4xl"/>
-            <Typography.Text view="primary-medium" weight="bold">
-                <Link
-                    href={`tel: ${A_STORE_PHONE}`}
-                    underline={false}
-                >
-                    {A_STORE_PHONE}
-                </Link>
-            </Typography.Text>
-            <Typography.Text view="primary-medium" weight="bold">
-                <Link
-                    href={`mailto: ${A_STORE_EMAIL}`}
-                    underline={false}
-                >
-                    {A_STORE_EMAIL}
-                </Link>
-            </Typography.Text>
+            {[contacts.phone, contacts.mail].map(({title, text, link}) => (
+                <Typography.Text key={title} view="primary-medium" weight="bold" title={title}>
+                    <Link href={link} underline={false}>
+                        {text}
+                    </Link>
+                </Typography.Text>
+            ))}
             <Gap size="l"/>
             <Typography.Text view="primary-medium" weight="bold">
                 г. Москва, пр-т Андропова, 18 корп. 3
@@ -64,10 +53,7 @@ export const ContactPage = () => {
             />
             <Gap size="xl"/>
             <Typography.Text view="primary-small" weight="bold">
-                <Link
-                    href={`/${policy.path}`}
-                    Component={RouterLink}
-                >
+                <Link href={`/${policy.path}`} Component={RouterLink}>
                     Политика конфиденциальности и обработки персональных данных
                 </Link>
             </Typography.Text>

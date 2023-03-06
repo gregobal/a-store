@@ -3,12 +3,13 @@ import {Link} from "@alfalab/core-components/link";
 import {SidePanelResponsive} from "@alfalab/core-components/side-panel";
 import {Space} from "@alfalab/core-components/space";
 import {Typography} from "@alfalab/core-components/typography";
-import {Dispatch, SetStateAction} from "react";
+import {Dispatch, ReactElement, SetStateAction} from "react";
 import {NavLink as RouterLink} from "react-router-dom";
 import {ReactComponent as MailIcon} from "../../assets/icons/mail.svg";
 import {ReactComponent as MessageIcon} from "../../assets/icons/message.svg";
 import {ReactComponent as PhoneIcon} from "../../assets/icons/phone.svg";
 import {SIDE_MODAL_BREAKPOINT} from "../../constants/common";
+import {contacts} from "../../constants/contact";
 import {contactUs, madeInAlfa, ownDesign, policy} from "../../constants/routes";
 import {Logo} from "../logo";
 
@@ -19,9 +20,16 @@ type Props = {
     onSetOpen: Dispatch<SetStateAction<boolean>>
 }
 
+type ContactsKey = keyof typeof contacts;
+
+const contactIcons: Record<ContactsKey, ReactElement> = {
+    mail: <MailIcon/>,
+    phone: <PhoneIcon/>,
+    whatsapp: <MessageIcon/>
+}
+
 export const SideMenu = ({open, onSetOpen}: Props) => {
     const menuRoutes = [madeInAlfa, ownDesign, contactUs];
-    const actionIcons = [MailIcon, PhoneIcon, MessageIcon];
 
     const handleModalClose = () => {
         onSetOpen(false);
@@ -63,8 +71,15 @@ export const SideMenu = ({open, onSetOpen}: Props) => {
                         </Link>
                     </Typography.Text>
                     <Space size="s" direction="horizontal">
-                        {actionIcons.map((Icon, idx) => (
-                            <ActionButton key={idx} icon={<Icon/>} colors="inverted" className={styles.icon}/>
+                        {Object.entries(contacts).map(([key, {title, link}]) => (
+                            <ActionButton
+                                key={title}
+                                href={link}
+                                icon={contactIcons[key as ContactsKey]}
+                                colors="inverted"
+                                className={styles.icon}
+                                title={title}
+                            />
                         ))}
                     </Space>
                 </Space>
