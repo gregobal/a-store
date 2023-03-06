@@ -1,7 +1,10 @@
 const A_STORE_EMAIL = "info@alfabankstore.ru";
 const A_STORE_PHONE = "+7 906 061 60 20";
 
-export const contacts = {
+export const contacts: Readonly<Record<
+    "mail" | "phone" | "whatsapp",
+    Readonly<Record<"title" | "text" | "link", string>>
+>> = {
     mail: {
         title: "Email",
         text: A_STORE_EMAIL,
