@@ -21,6 +21,7 @@
 @media (max-width: 1023px) {
 	.container {
 		top: unset;
+		right: var(--gap-xl);
 		bottom: var(--gap-xl);
 	}
 }
