@@ -1,10 +1,10 @@
 import {render, screen} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import {MemoryRouter, Route, Routes} from "react-router-dom";
-import {contactUs, madeInAlfa, mainPage, ownDesign} from "../../constants/routes";
+import {contactUs, madeInAlfa, mainPage, ownDesign, policy} from "../../constants/routes";
 import {SideMenu} from "./index";
 
-const routes = [mainPage, madeInAlfa, ownDesign, contactUs];
+const routes = [mainPage, madeInAlfa, ownDesign, contactUs, policy];
 
 const onSetOpen = jest.fn();
 

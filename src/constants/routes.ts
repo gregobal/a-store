@@ -28,4 +28,9 @@ export const contactUs: AStoreRoute = {
     title: "Контакты"
 };
 
+export const policy: AStoreRoute = {
+    path: "policy",
+    title: "Политика в отношении обработки персональных данных"
+};
+
 export const ORDER_HASH = "#tcart";

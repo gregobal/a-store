@@ -48,6 +48,12 @@
 	background-color: var(--color-black);
 }
 
+@media (max-width: 1023px) {
+	.mainContent {
+		padding-bottom: var(--gap-5xl);
+	}
+}
+
 @keyframes loading {
 	0% {
 		opacity: 0;

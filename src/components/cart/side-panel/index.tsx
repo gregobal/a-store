@@ -7,6 +7,7 @@ import {Space} from "@alfalab/core-components/space";
 import {Typography} from "@alfalab/core-components/typography";
 import {Dispatch, SetStateAction, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
+import {SIDE_MODAL_BREAKPOINT} from "../../../constants/common";
 import {ORDER_HASH} from "../../../constants/routes";
 import {useAppSelector} from "../../../hooks/useAppSelector";
 import {selectCartTotalCount, selectCartTotalPrice} from "../../../store/cart";
@@ -41,6 +42,7 @@ export const CartSidePanel = ({open, onSetOpen}: Props) => {
 
     return (
         <SidePanelResponsive
+            breakpoint={SIDE_MODAL_BREAKPOINT}
             disableRestoreFocus={true}
             open={open}
             onClose={handleModalClose}
