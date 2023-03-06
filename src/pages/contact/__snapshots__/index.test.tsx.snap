@@ -16,6 +16,7 @@ Object {
       />
       <span
         class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+        title="Телефон"
       >
         <a
           class="link__component_1r33z link__primary_1b8mz link__withoutUnderline_1r33z"
@@ -30,6 +31,7 @@ Object {
       </span>
       <span
         class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+        title="Email"
       >
         <a
           class="link__component_1r33z link__primary_1b8mz link__withoutUnderline_1r33z"
@@ -131,6 +133,7 @@ Object {
     />
     <span
       class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      title="Телефон"
     >
       <a
         class="link__component_1r33z link__primary_1b8mz link__withoutUnderline_1r33z"
@@ -145,6 +148,7 @@ Object {
     </span>
     <span
       class="typography__primary-medium_xcdcz typography__bold_xcdcz"
+      title="Email"
     >
       <a
         class="link__component_1r33z link__primary_1b8mz link__withoutUnderline_1r33z"
